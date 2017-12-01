@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<reference  anchor='RFC1991' target='https://www.rfc-editor.org/info/rfc1991'>
+<front>
+<title>PGP Message Exchange Formats</title>
+<author initials='D.' surname='Atkins' fullname='D. Atkins'><organization /></author>
+<author initials='W.' surname='Stallings' fullname='W. Stallings'><organization /></author>
+<author initials='P.' surname='Zimmermann' fullname='P. Zimmermann'><organization /></author>
+<date year='1996' month='August' />
+<abstract><t>This document describes the format of &quot;PGP files&quot;, i.e., messages that have been encrypted and/or signed with PGP.  This memo provides information for the Internet community.  This memo does not specify an Internet standard of any kind.</t></abstract>
+</front>
+<seriesInfo name='RFC' value='1991'/>
+<seriesInfo name='DOI' value='10.17487/RFC1991'/>
+</reference>

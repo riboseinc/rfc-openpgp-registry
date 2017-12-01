@@ -1,0 +1,38 @@
+= Reason for Revocation Extensions Registry
+
+Proposed changes to the registry:
+
+* Rename the registry to "Reasons for Revocation"
+
+* Rename the column "Flag" to "Reason"
+
+* Change registry policy to **Expert Review**.
+
+* Update its "Reference" to also refer to this document.
+
+* A Standards Track document is required to register an item
+with the value "Yes" in any recommendation.
+
+* Add the following note:
+
+----
+Note: Experts are to verify that the proposed registration
+**SHOULD** provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+----
+
+
+Update the following registrations:
+
+|===
+| Value | Reason | Interoperability Recommended | Reference
+
+| 0 | No reason specified (key revocations or cert revocations) | Yes | <<RFC4880, Section 5.2.3.23 of RFC4880>>
+| 1 | Key is superseded (key revocations) | Yes | <<RFC4880, Section 5.2.3.23 of RFC4880>>
+| 2 | Key material has been compromised (key revocations) | Yes | <<RFC4880, Section 5.2.3.23 of RFC4880>>
+| 3 | Key is retired and no longer used (key revocations) | Yes | <<RFC4880, Section 5.2.3.23 of RFC4880>>
+| 32 | User ID information is no longer valid (cert revocations) | Yes | <<RFC4880, Section 5.2.3.23 of RFC4880>>
+
+|===
+

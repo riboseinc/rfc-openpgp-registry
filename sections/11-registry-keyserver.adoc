@@ -1,0 +1,45 @@
+= Key Server Preference Extensions Registry
+
+Proposed changes to the registry:
+
+* Rename the registry to "Key Server Preferences"
+
+* Rename the column "First octet" to "Flag"
+
+* Rename the column "Extension" to "Description"
+
+* Change registry policy to **Specification Required**.
+
+* Update its "Reference" to also refer to this document.
+
+* A Standards Track document is required to register an item 
+with the value "Yes" in any recommendation.
+
+Add the following note:
+
+----
+This is a variable-length bit field.
+
+Note: Experts are to verify that the proposed registration
+**SHOULD** provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+----
+
+Update existing registrations:
+
+|===
+| Flag              | Description | Recommended | Reference
+
+| First octet, 0x01 | Unassigned. |             |
+| First octet, 0x02 | Unassigned. |             |
+| First octet, 0x04 | Unassigned. |             |
+| First octet, 0x08 | Unassigned. |             |
+| First octet, 0x10 | Unassigned. |             |
+| First octet, 0x20 | Unassigned. |             |
+| First octet, 0x40 | Unassigned. |             |
+| First octet, 0x80 | No-Modify   | Yes         | <<RFC4880, Section 5.3.2.17 of RFC4880>>
+| Second octet-     | Unassigned. |             |
+
+|===
+

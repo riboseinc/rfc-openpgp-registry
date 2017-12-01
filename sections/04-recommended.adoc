@@ -1,0 +1,105 @@
+= Providing Recommendations Via The "Recommended" Column
+
+The feature set of OpenPGP is an evolving one. In some cases,
+it has been unclear whether implementation of a certain feature
+would actually be beneficial for interoperability or create 
+fragmentation of implementations.
+
+Moreover, the fast-moving nature of cryptography directly impacts the
+security of OpenPGP implementations, and an algorithm once considered
+secure may be subject to cryptanalytic results that advise otherwise.
+For example, this has been demonstrated by the widespread obsolescence
+of SHA-1 <<SHA1-Coll>> <<RFC6194>>.
+
+It is therefore beneficial for all OpenPGP interested parties that
+implementers can follow a stable reference on what is considered best
+practice in OpenPGP implementations.
+
+There are two types of recommendations considered here:
+
+* Recommended for security
+* Recommended for interoperability
+
+== Security Recommendations
+
+Recommendations for security are usually critical and urgent.
+
+The following registries shall have the "Security Recommendation"
+column added:
+
+* PGP String-to-Key (S2K) Registry
+* Public Key Algorithms Registry
+* Symmetric Key Algorithms Registry
+* Hash Algorithms Registry
+
+The allowed values for this column are:
+
+* Yes: Recommended, this algorithm is considered secure;
+* No: Not recommended, this algorithm is considered insecure;
+* Empty: No comment, there is no recommendation on this algorithm.
+
+A "Security Recommendation" **MUST** only be accepted through an
+<<expert-review>>.
+
+WARNING: Cryptographic algorithms and parameters will be broken or
+weakened over time. Blindly implementing cipher suites listed in the
+registries is not advised. Implementers and users need to check that
+the cryptographic algorithms listed continue to provide the expected
+level of security.
+
+
+== Interoperability Recommendations
+
+Recommendations for interoperability are generally less urgent
+but greatly beneficial for the OpenPGP user experience.
+
+The following registries shall have the "Interoperability
+Recommendation" column added:
+
+* PGP String-to-Key (S2K) Registry
+* PGP Packet Types/Tags Registry
+* PGP User Attribute Types Registry
+* Image Format Subpacket Types Registry
+* Signature Subpacket Types Registry
+* Key Server Preference Extensions Registry
+* Reason for Revocation Extensions Registry
+* Implementation Features Registry
+* New Packet Versions Registry
+* Key Flags Extensions Registry
+* Public Key Algorithms Registry
+* Symmetric Key Algorithms Registry
+* Hash Algorithms Registry
+* Compression Algorithms Registry
+
+The allowed values for this column are:
+
+* Yes: Recommended, implementation of this feature enhances
+interoperability for OpenPGP;
+* No: Not recommended, implementation of this feature reduces
+interoperability for OpenPGP;
+* Empty: No comment, there is no recommendation on this feature on
+interoperability.
+
+An "Interoperability Recommendation" **MUST** only be accepted through an
+<<expert-review>>.
+
+
+////
+Adding a recommended
+parameter to a registry or updating a parameter to recommended status
+requires standards action.  
+////
+
+
+== No Recommendation
+
+Do beware that:
+
+* Not all newly defined parameters in a Standards Track document need
+to be marked as "Recommended".
+
+* An item not marked as "Recommended" does not mean it is "Not
+Recommended". It is simply a reflection that this item has not been
+through Expert Review, has limited applicability, is intended only
+for specific use cases, or for other reasons.
+

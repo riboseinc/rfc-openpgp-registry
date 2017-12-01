@@ -1,0 +1,37 @@
+= New Registry: Signature Notation Data Subpacket Notation Flags Registry
+
+This registry is created in accordance with 
+<<RFC4880, Section 5.2.3.16 of>>.
+
+The registry: 
+
+* Contain the columns "Flag", "Description", "Security Recommended",
+"Interoperability Recommended", Reference"
+
+* Registry policy is **Specification Required**.
+
+* Its "Reference" should refer to <<RFC4880>> and this document.
+
+Add the following note:
+
+----
+This is a variable-length bit field.
+
+Note: Experts are to verify that the proposed registration
+**SHOULD** provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+----
+
+The registry **SHOULD** be initialized to the following values:
+
+|===
+| Value | Description | Sec. Recommended | Interop. Recommended | Reference
+
+| First octet, 0x80 | This note value is human-readable text. | | Yes | <<RFC4880>>
+| First octet, - | Unassigned. | | | <<RFC4880>>
+
+| Second octet- | Unassigned. | 
+
+|===
+

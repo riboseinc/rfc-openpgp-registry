@@ -1,0 +1,4 @@
+= IANA Considerations
+
+This document specifies a number of changes to the IANA OpenPGP registries.
+

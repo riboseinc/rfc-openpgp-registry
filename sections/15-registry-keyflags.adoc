@@ -1,0 +1,48 @@
+= Key Flags Extensions Registry
+
+Proposed changes to the registry:
+
+* Rename the registry to "Key Flags"
+
+* Rename the column "Value" to "Flag"
+
+* Rename the column "Extension" to "Description"
+
+* Mark value "First Octet, 0x40" as "Private use" in the registry.
+
+* Change registry policy to **Specification Required**.
+
+* Update its "Reference" to also refer to this document.
+
+* A Standards Track document is required to register an item 
+with the value "Yes" in any recommendation.
+
+Add the following note:
+
+----
+This is a variable-length bit field.
+
+Note: Experts are to verify that the proposed registration
+**SHOULD** provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+----
+
+Update existing registrations:
+
+|===
+| Flag | Description | Recommended | Reference
+
+| First octet, 0x01 | This key may be used to certify other keys. | Yes | <<RFC4880, Section 5.2.3.21 of RFC4880>>
+| First octet, 0x02 | This key may be used to sign data. | Yes | <<RFC4880, Section 5.2.3.21 of RFC4880>>
+| First octet, 0x04 | This key may be used to encrypt communications. | Yes | <<RFC4880, Section 5.2.3.21 of RFC4880>>
+| First octet, 0x08 | This key may be used to encrypt storage. | Yes | <<RFC4880, Section 5.2.3.21 of RFC4880>>
+| First octet, 0x10 | The private component of this key may have been split by a secret-sharing mechanism. | Yes | <<RFC4880, Section 5.2.3.21 of RFC4880>>
+| First octet, 0x20 | This key may be used for authentication. | Yes | <<RFC4880, Section 5.2.3.21 of RFC4880>>
+| First octet, 0x40 | Private use. | | <<RFC4880, Section 5.2.3.21 of RFC4880>>
+| First octet, 0x80 | The private component of this key may be in the possession of more than one person. | Yes | <<RFC4880, Section 5.2.3.21 of RFC4880>>
+
+| Second octet- | Unassigned. | 
+
+|===
+

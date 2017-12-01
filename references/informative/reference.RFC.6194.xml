@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<reference  anchor='RFC6194' target='https://www.rfc-editor.org/info/rfc6194'>
+<front>
+<title>Security Considerations for the SHA-0 and SHA-1 Message-Digest Algorithms</title>
+<author initials='T.' surname='Polk' fullname='T. Polk'><organization /></author>
+<author initials='L.' surname='Chen' fullname='L. Chen'><organization /></author>
+<author initials='S.' surname='Turner' fullname='S. Turner'><organization /></author>
+<author initials='P.' surname='Hoffman' fullname='P. Hoffman'><organization /></author>
+<date year='2011' month='March' />
+<abstract><t>This document includes security considerations for the SHA-0 and SHA-1 message digest algorithm.  This document is not an Internet  Standards Track specification; it is published for informational  purposes.</t></abstract>
+</front>
+<seriesInfo name='RFC' value='6194'/>
+<seriesInfo name='DOI' value='10.17487/RFC6194'/>
+</reference>

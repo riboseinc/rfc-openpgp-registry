@@ -1,0 +1,38 @@
+= Compression Algorithms Registry
+
+Proposed changes to the registry:
+
+* Change registry policy to **Specification Required**.
+
+* Update its "Reference" to also refer to this document.
+
+* A Standards Track document is required to register an item
+with the value "Yes" in any recommendation.
+
+* Existing registrations with a "Reference" value pointing to a
+non-IETF published document should be checked to see if an
+IETF-published document is available, and if so, update the reference
+to point to the IETF-published document instead for consistency.
+
+Add the following note:
+
+----
+Note: Experts are to verify that the proposed registration
+**SHOULD** provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way. References to IETF-published documents are
+preferred.
+----
+
+Update the following registrations:
+
+|===
+| ID | Algorithm | Interoperability Recommended | Reference
+
+| 0 | Uncompressed | Yes | <<RFC4880, Section 9.3 of>>
+| 1 | ZIP | Yes | <<RFC4880, Section 9.3 of>>
+| 2 | ZLIB | Yes | <<RFC4880, Section 9.3 of>>
+| 3 | BZip2 | | <<RFC4880, Section 9.3 of>>
+
+|===
+

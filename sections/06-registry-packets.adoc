@@ -1,0 +1,51 @@
+= PGP Packet Types/Tags Registry
+
+Proposed changes to the registry:
+
+* Rename the registry to "Packet Types"
+
+* Rename the column "Attribute" to "Packet Type"
+
+* Change registry policy to **RFC Required**.
+
+* Update its "Reference" to also refer to this document.
+
+* A Standards Track document is required to register a Packet Type
+with the value "Yes" in any recommendation.
+
+Add the following note:
+
+----
+Note: Due to the scarcity of codepoints in this registry,
+experts are to verify that the proposed registration
+**MUST** provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+----
+
+Update the following registrations:
+
+|===
+| Value | Packet Type | Security Recommended | Interoperability Recommended | Reference
+
+| 0  | Reserved - a packet tag **MUST NOT** have this value | No  | Yes | <<RFC4880>>
+| 1  | Public-Key Encrypted Session Key Packet              | Yes | Yes | <<RFC4880>>
+| 2  | Signature Packet                                     | Yes | Yes | <<RFC4880>>
+| 3  | Symmetric-Key Encrypted Session Key Packet           | Yes | Yes | <<RFC4880>>
+| 4  | One-Pass Signature Packet                            | Yes | Yes | <<RFC4880>>
+| 5  | Secret Key Packet                                    | Yes | Yes | <<RFC4880>>
+| 6  | Public Key Packet                                    | Yes | Yes | <<RFC4880>>
+| 7  | Secret Subkey Packet                                 | Yes | Yes | <<RFC4880>>
+| 8  | Compressed Data Packet                               | Yes | Yes | <<RFC4880>>
+| 9  | Symmetrically Encrypted Data Packet                  | No  | Yes | <<RFC4880>>
+| 10 | Marker Packet                                        | No  | No  | <<RFC4880>>
+| 11 | Literal Data Packet                                  | No  | Yes | <<RFC4880>>
+| 12 | Trust Packet                                         |     | No  | <<RFC4880>>
+| 13 | User ID Packet                                       |     | Yes | <<RFC4880>>
+| 14 | Public Subkey Packet                                 | Yes | Yes | <<RFC4880>>
+| 17 | User Attribute Packet                                |     | Yes | <<RFC4880>>
+| 18 | Sym. Encrypted and Integrity Protected Data Packet   | Yes | Yes | <<RFC4880>>
+| 19 | Modification Detection Code Packet                   | Yes | Yes | <<RFC4880>>
+
+|===
+

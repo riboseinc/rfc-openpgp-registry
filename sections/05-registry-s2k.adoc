@@ -1,0 +1,33 @@
+= PGP String-to-Key (S2K) Registry
+
+Proposed changes to the registry:
+
+* Rename registry to "String-to-Key (S2K) Algorithms"
+
+* Change registry policy to **Expert Review**.
+
+* Update its "Reference" to also refer to this document.
+
+* A Standards Track document is required to register an S2K algorithm
+with the value "Yes" in any recommendation.
+
+Add the following note:
+
+----
+Note: Experts are to verify that the proposed registration
+provides a publicly-available standard that can be implemented
+in an interoperable way, with notable benefits for the wider
+OpenPGP community.
+----
+
+Update the following registrations:
+
+|===
+| S2K Type | Security Recommended | Interoperability Recommended
+
+| Simple S2K | No | Yes
+| Salted S2K | No | Yes
+| Iterated and Salted S2K | Yes | Yes
+
+|===
+

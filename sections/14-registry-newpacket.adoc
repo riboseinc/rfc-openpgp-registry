@@ -1,0 +1,51 @@
+= New Packet Versions Registry
+
+This registry is currently empty.
+
+Proposed changes to the registry:
+
+* Rename the registry to "Packet Type Versions Registry"
+
+* It should have the following columns: "Packet Type", "Version",
+"Security Recommended", "Interoperability Recommended", "Reference"
+
+* Change registry policy to **Specification Required**. Changes that
+add a new version to an existing packet type should follow the policy
+of that of the "PGP Packet Type" Registry.
+
+* Update its "Reference" to also refer to this document.
+
+* Add the following note:
++
+----
+Note: Experts are to verify that the proposed registration
+**SHOULD** provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+----
+
+* A Standards Track document is required to register a Packet Type
+with the value "Yes" in any recommendation.
+
+Add in the existing (but missing) registrations:
+
+|===
+| Packet Type | Version | Security Recommended | Interoperability Recommended | Reference
+
+| 1 | 3 | Yes | Yes | <<RFC4880>>
+| 2 | 3 | No | Yes | <<RFC4880>>
+| 2 | 4 | Yes | Yes | <<RFC4880>>
+| 3 | 4 | Yes | Yes | <<RFC4880>>
+| 4 | 3 | Yes | Yes | <<RFC4880>>
+| 6 | 3 | Yes | Yes | <<RFC4880>>
+| 6 | 4 | Yes | Yes | <<RFC4880>>
+| 14 | 3 | Yes | Yes | <<RFC4880>>
+| 14 | 4 | Yes | Yes | <<RFC4880>>
+| 5 | 3 | Yes | Yes | <<RFC4880>>
+| 5 | 4 | Yes | Yes | <<RFC4880>>
+| 7 | 3 | Yes | Yes | <<RFC4880>>
+| 7 | 4 | Yes | Yes | <<RFC4880>>
+| 18 | 1 | Yes | Yes | <<RFC4880>>
+
+|===
+

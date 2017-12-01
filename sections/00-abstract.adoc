@@ -1,0 +1,10 @@
+[abstract]
+
+This document describes a number of changes to the OpenPGP (RFC 4880)
+IANA registries that range from adding notes to the registry 
+to changing registration policies.  These changes were motivated
+by recently proposed extensions to OpenPGP.
+Existing IANA OpenPGP registry policies are defined by RFC 4880.
+
+// No references allowed in the Abstract
+

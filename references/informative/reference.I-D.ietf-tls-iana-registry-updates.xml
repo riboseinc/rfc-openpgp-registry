@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<reference anchor='I-D.ietf-tls-iana-registry-updates'>
+<front>
+<title>IANA Registry Updates for TLS and DTLS</title>
+
+<author initials='J' surname='Salowey' fullname='Joseph Salowey'>
+    <organization />
+</author>
+
+<author initials='S' surname='Turner' fullname='Sean Turner'>
+    <organization />
+</author>
+
+<date month='October' day='30' year='2017' />
+
+<abstract><t>This document describes a number of changes to (D)TLS IANA registries that range from adding notes to the registry all the way to changing the registration policy.  These changes were mostly motivated by WG review of the (D)TLS-related registries undertaken as part of the TLS1.3 development process.  This document updates many (D)TLS RFCs (see updates header).</t></abstract>
+
+</front>
+
+<seriesInfo name='Internet-Draft' value='draft-ietf-tls-iana-registry-updates-02' />
+<format type='TXT'
+        target='http://www.ietf.org/internet-drafts/draft-ietf-tls-iana-registry-updates-02.txt' />
+</reference>

@@ -1,0 +1,58 @@
+= Signature Subpacket Types Registry
+
+Proposed changes to the registry:
+
+* Rename the column "Attribute" to "Signature Subpacket Type"
+
+* Change registry policy to **Expert Review**.
+
+* Update its "Reference" to also refer to this document.
+
+* A Standards Track document is required to register a Signature
+Subpacket Type with the value "Yes" in any recommendation.
+
+Add the following note:
+
+----
+Note: Experts are to verify that the proposed registration
+**SHOULD** provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+----
+
+Update the following registrations:
+
+|===
+| Value | Image Format Type | Interoperability Recommended | Reference
+
+| 0-1   | Reserved                         |     | <<RFC4880>>
+| 1     | Reserved                         |     | <<RFC4880>>
+| 2     | Signature Creation Time          | Yes | <<RFC4880>>
+| 3     | Signature Expiration Time        | Yes | <<RFC4880>>
+| 4     | Exportable Certification         | Yes | <<RFC4880>>
+| 5     | Trust Signature                  | Yes | <<RFC4880>>
+| 6     | Regular Expression               |     | <<RFC4880>>
+| 7     | Revocable                        | Yes | <<RFC4880>>
+| 8     | Reserved                         |     | <<RFC4880>>
+| 9     | Key Expiration Time              | Yes | <<RFC4880>>
+| 11    | Preferred Symmetric Algorithms   | Yes | <<RFC4880>>
+| 12    | Revocation Key                   | Yes | <<RFC4880>>
+| 13-15 | Reserved                         |     | <<RFC4880>>
+| 16    | Issuer Key ID                    | Yes | <<RFC4880>>
+| 17-19 | Reserved                         |     | <<RFC4880>>
+| 20    | Notation Data                    | Yes | <<RFC4880>>
+| 21    | Preferred Hash Algorithms        | Yes | <<RFC4880>>
+| 22    | Preferred Compression Algorithms | Yes | <<RFC4880>>
+| 23    | Key Server Preferences           |     | <<RFC4880>>
+| 24    | Preferred Key Server             |     | <<RFC4880>>
+| 25    | Primary User ID                  | Yes | <<RFC4880>>
+| 26    | Policy Uri                       |     | <<RFC4880>>
+| 27    | Key Flags                        | Yes | <<RFC4880>>
+| 28    | Signer's User ID                 | Yes | <<RFC4880>>
+| 29    | Reason For Revocation            | Yes | <<RFC4880>>
+| 30    | Features                         | Yes | <<RFC4880>>
+| 31    | Signature Target                 | Yes | <<RFC4880>>
+| 32    | Embedded Signature               | Yes | <<RFC4880>>
+
+|===
+

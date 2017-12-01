@@ -1,0 +1,100 @@
+
+[#expert-pool]
+= Designated Experts
+
+Designated Experts are responsible for performing registration request
+reviews for **Specification Required** IANA OpenPGP registries.
+
+
+== IANA Registration
+
+IANA **MUST** only accept registry updates from the Designated Experts
+and **SHOULD** direct all requests for registration to the review
+mailing list.
+
+
+== Eligibility Criteria
+
+A Designated Expert **SHOULD** have a thorough understanding,
+demonstrated knowledge and experience of OpenPGP <<RFC4880>> and its
+Standards Track extensions.
+
+
+== Selection Criteria And Pool
+
+Designated Experts are judged and selected by the IETF Area
+Director of which the "openpgp" workgroup belongs.
+
+The selected pool of Designated Experts **SHOULD** be able to
+represent the perspectives of different applications using this
+specification, in order to enable broadly informed review of
+registration decisions. 
+
+[#expert-review]
+== Designated Expert Review
+
+=== Review Procedure
+
+On submission of a review request, five Designated Experts
+are sought out for the review of the request. These Designated Experts
+must provide a review decision response within 21 days of submission.
+
+If less than five Designated Experts have performed a review by the
+end of that period, an extension will be granted and extra Designated
+Experts selected to complete the review.
+
+To allow for the allocation of values prior to publication, Designated
+Experts may approve registration once they are satisfied that such a
+specification will be published.
+
+In cases where a registration decision could be perceived as creating
+a conflict of interest for a particular Designated Expert, that
+Designated Expert **SHOULD** defer review responsibility to
+another Designated Expert.
+
+
+=== Review Criteria
+
+A Designated Expert **MUST** take the following criteria into 
+account when reviewing registration requests:
+
+* whether the proposed registration duplicates existing functionality;
+
+* whether the proposed registration is likely to be of general
+applicability;
+
+* the clarity of the proposed registration description;
+
+* whether the proposed registration is likely to be of general
+applicability;
+
+* whether the specification of the proposed registration item is
+publicly available.
+
+
+== Review Outcomes
+
+Approvals **MUST** include an explanation.
+
+Denials **MUST** include an explanation and, if applicable,
+constructive suggestions as to how to make the request successful.
+
+
+== Review Complaints
+
+:iesg-mailing-list: \iesg@ietf.org
+
+Review complaints **SHOULD** be directly brought to the IESG for
+resolution through the {iesg-mailing-list} mailing list.
+
+The following issues are eligible for the dispute process:
+
+* Registration requests that have not received any Designated Expert
+reviews for a period longer than 21 days.
+
+* A rejection was performed by an inappropriate Designated Expert, for
+example, who is strongly suspected of a conflict of interest or has
+demonstrated unprofessional behavior or impartiality.
+
+
+

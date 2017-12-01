@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<reference  anchor='RFC2440' target='https://www.rfc-editor.org/info/rfc2440'>
+<front>
+<title>OpenPGP Message Format</title>
+<author initials='J.' surname='Callas' fullname='J. Callas'><organization /></author>
+<author initials='L.' surname='Donnerhacke' fullname='L. Donnerhacke'><organization /></author>
+<author initials='H.' surname='Finney' fullname='H. Finney'><organization /></author>
+<author initials='R.' surname='Thayer' fullname='R. Thayer'><organization /></author>
+<date year='1998' month='November' />
+<abstract><t>This document is maintained in order to publish all necessary information needed to develop interoperable applications based on the OpenPGP format.  [STANDARDS-TRACK]</t></abstract>
+</front>
+<seriesInfo name='RFC' value='2440'/>
+<seriesInfo name='DOI' value='10.17487/RFC2440'/>
+</reference>

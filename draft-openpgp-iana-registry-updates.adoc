@@ -1,0 +1,58 @@
+= IANA Registry Updates for OpenPGP
+:doctype: internet-draft
+:name: draft-openpgp-iana-registry-updates-00
+:abbrev: OpenPGP IANA Registry Updates
+:updates: 4880
+:status: info
+:ipr: trust200902
+:submissionType: individual
+:area: Internet
+:intended-series: full-standard
+:workgroup: SAAG
+:revdate: 2017-11-29T00:00:00Z
+:fullname: Ronald Henry Tse
+:lastname: Tse
+:forename_initials: R. H.
+:organization: Ribose
+:street: Suite 1111, 1 Pedder Street
+:city: Central
+:region: Hong Kong
+:country: Hong Kong
+:uri: https://www.ribose.com
+:email: ronald.tse@ribose.com
+//:bibliography-database: my_database.bib
+
+include::sections/00-abstract.adoc[leveloffset=+1]
+
+include::sections/01-intro.adoc[leveloffset=+1]
+include::sections/02-conventions.adoc[leveloffset=+1]
+include::sections/03-alignment.adoc[leveloffset=+1]
+include::sections/04-recommended.adoc[leveloffset=+1]
+include::sections/05-registry-s2k.adoc[leveloffset=+1]
+include::sections/06-registry-packets.adoc[leveloffset=+1]
+include::sections/07-registry-user.adoc[leveloffset=+1]
+include::sections/08-registry-image.adoc[leveloffset=+1]
+include::sections/09-registry-signature.adoc[leveloffset=+1]
+include::sections/10-registry-signotion.adoc[leveloffset=+1]
+include::sections/11-registry-keyserver.adoc[leveloffset=+1]
+include::sections/12-registry-revocation.adoc[leveloffset=+1]
+include::sections/13-registry-features.adoc[leveloffset=+1]
+include::sections/14-registry-newpacket.adoc[leveloffset=+1]
+include::sections/15-registry-keyflags.adoc[leveloffset=+1]
+include::sections/16-registry-alg-pub.adoc[leveloffset=+1]
+include::sections/17-registry-alg-sym.adoc[leveloffset=+1]
+include::sections/18-registry-alg-hash.adoc[leveloffset=+1]
+include::sections/19-registry-alg-compress.adoc[leveloffset=+1]
+include::sections/20-registry-signotion-flags.adoc[leveloffset=+1]
+include::sections/93-specrev-registry.adoc[leveloffset=+1]
+include::sections/94-expert-pool.adoc[leveloffset=+1]
+include::sections/95-security.adoc[leveloffset=+1]
+include::sections/96-iana.adoc[leveloffset=+1]
+
+// must give references before appendix!
+
+include::sections/98-references.adoc[leveloffset=+1]
+
+[appendix]
+include::sections/99-acknowledgements.adoc[leveloffset=+1]
+

@@ -1,0 +1,32 @@
+
+= Image Format Subpacket Types Registry
+
+Proposed changes to the registry:
+
+* Rename the column "Attribute" to "Image Format Type"
+
+* Change registry policy to **Specification Required**.
+
+* Update its "Reference" to also refer to this document.
+
+* A Standards Track document is required to register a Packet Type/Tag
+with the value "Yes" in any recommendation.
+
+Add the following note:
+
+----
+Note: Experts are to verify that the proposed registration
+**SHOULD** provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+----
+
+Update the following registrations:
+
+|===
+| Value | Image Format Type | Interoperability Recommended | Reference
+
+| 1 | JPEG | Yes | <<RFC4880>>
+
+|===
+

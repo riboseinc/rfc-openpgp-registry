@@ -1,0 +1,45 @@
+= Signature Notation Data Subpacket Notation Types Registry
+
+This registry is currently empty.
+
+However, the existing IANA registry contains an erroneous note
+that the registry is about "User Notations". According to <<RFC4880>>
+which defined this registry, "[n]otations contain a user space that is
+completely unmanaged". This registry should be for the <<RFC4880>>
+"IETF (name)space".
+
+Proposed changes to the registry:
+
+* Change registry policy to **Specification Required**.
+
+* Update its "Reference" to also refer to this document.
+
+Update its erroneous "Note" that says:
+
+----
+Notation names are arbitrary strings encoded in UTF-8. They reside two
+name spaces: The IETF name space and the user name space.
+
+The IETF name space is registered with IANA. These names MUST NOT
+contain the "@" character (0x40).  This is a tag for the user name
+space.
+----
+
+To:
+
+----
+Notation names are arbitrary strings encoded in UTF-8, and there are
+two namespaces:
+
+* IETF namespace: keys are of any string but **MUST NOT** contain the
+"@" character (0x40). Allowed keys **MUST** by registered in this
+registry.
+
+* User namespace: keys are of form "[name]@[domain]", these are
+unmanaged keys and NOT maintained by this registry.
+
+Note: Experts are to verify that the proposed registration
+is necessary and **SHOULD** provide general benefits for the wider
+OpenPGP community.
+----
+

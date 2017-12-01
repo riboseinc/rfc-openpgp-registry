@@ -1,0 +1,45 @@
+= Implementation Features Registry
+
+Proposed changes to the registry:
+
+* Rename the registry to "Features"
+
+* Mark value "First Octet, 0x80" as "Private Use" in the registry.
+
+* Rename the column "Value" to "Flag"
+
+* Change registry policy to **Specification Required**.
+
+* Update its "Reference" to also refer to this document.
+
+* A Standards Track document is required to register an item
+with the value "Yes" in any recommendation.
+
+Add the following note:
+
+----
+This is a variable-length bit field.
+
+Note: Experts are to verify that the proposed registration
+**SHOULD** provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+----
+
+Update the following registrations:
+
+|===
+| Value | Feature | Security Recommended | Interoperability Recommended | Reference
+
+| First octet, 0x01 | Modification Detection (packets 18 and 19) | Yes | Yes | <<RFC4880, Section 5.2.3.24 of RFC4880>>
+| First octet, 0x02 | Unassigned | |
+| First octet, 0x04 | Unassigned | |
+| First octet, 0x08 | Unassigned | |
+| First octet, 0x10 | Unassigned | |
+| First octet, 0x20 | Unassigned | |
+| First octet, 0x40 | Unassigned | |
+| First octet, 0x80 | Reserved | |
+| Second octet- | Unassigned | |
+
+|===
+

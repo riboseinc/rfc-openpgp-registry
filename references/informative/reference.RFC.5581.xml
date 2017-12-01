@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<reference  anchor='RFC5581' target='https://www.rfc-editor.org/info/rfc5581'>
+<front>
+<title>The Camellia Cipher in OpenPGP</title>
+<author initials='D.' surname='Shaw' fullname='D. Shaw'><organization /></author>
+<date year='2009' month='June' />
+<abstract><t>This document presents the necessary information to use the Camellia symmetric block cipher in the OpenPGP protocol.  This memo provides  information for the Internet community.</t></abstract>
+</front>
+<seriesInfo name='RFC' value='5581'/>
+<seriesInfo name='DOI' value='10.17487/RFC5581'/>
+</reference>

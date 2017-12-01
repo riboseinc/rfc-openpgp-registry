@@ -1,0 +1,48 @@
+= Public Key Algorithms Registry
+
+Proposed changes to the registry:
+
+* Change registry policy to **Specification Required**.
+
+* Update its "Reference" to also refer to this document.
+
+* A Standards Track document is required to register an item
+with the value "Yes" in any recommendation.
+
+* Existing registrations with a "Reference" value pointing to a
+non-IETF published document should be checked to see if an
+IETF-published document is available, and if so, update the reference
+to point to the IETF-published document instead for consistency.
+
+Add the following note:
+
+----
+Note: Experts are to verify that the proposed registration
+**SHOULD** provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way. References to IETF-published documents are
+preferred. The "Reference" value should point to a document that
+details the implementation of this algorithm in OpenPGP, not of
+the algorithm itself.
+----
+
+Update the following registrations:
+
+|===
+| ID | Algorithm | Security Recommended | Interoperability Recommended | Reference
+
+| 1  | RSA (Encrypt or Sign) | Yes | Yes | <<RFC4880, Section 13.5 of>>
+| 2  | RSA Encrypt-Only | | No | <<RFC4880, Section 13.5 of>>
+| 3  | RSA Sign-Only | | No | <<RFC4880, Section 13.5 of>>
+| 16 | Elgamal (Encrypt-Only) | Yes | Yes | <<RFC4880>>
+| 17 | DSA (Digital Signature Algorithm) | Yes | Yes | <<RFC4880,
+Section 13.6 of>>
+| 18 | ECDH public key algorithm | Yes | Yes | <<RFC6637>>
+| 19 | ECDSA public key algorithm | Yes | Yes | <<RFC6637>>
+| 20 | Reserved (formerly Elgamal Encrypt or Sign) | | | <<RFC4880,
+Section 9.1 of>>
+| 21 | Reserved for Diffie-Hellman (X9.42, as defined for IETF-S/MIME)
+| | | <<RFC4880, Section 9.1 of>>
+
+|===
+

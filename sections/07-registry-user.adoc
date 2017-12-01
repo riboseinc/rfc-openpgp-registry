@@ -1,0 +1,34 @@
+
+= PGP User Attribute Types Registry
+
+Proposed changes to the registry:
+
+* Rename registry to "User Attribute Subpacket Types"
+
+* Rename the column "Attribute" to "User Attribute Type"
+
+* Change registry policy to **Specification Required**.
+
+* Update its "Reference" to also refer to this document.
+
+* A Standards Track document is required to register an Attribute Type
+algorithm with the value "Yes" in any recommendation.
+
+Add the following note:
+
+----
+Note: Experts are to verify that the proposed registration
+**SHOULD** provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+----
+
+Update the following registrations:
+
+|===
+| Attribute Type | Interoperability Recommended | Reference
+
+| image          | Yes                          | <<RFC4880>>
+
+|===
+
