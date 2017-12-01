@@ -16,8 +16,3 @@ advances in cryptanalysis.  Implementers and users need to check that
 the cryptographic algorithms listed continue to provide the expected
 level of security.
 
-Designated experts ensure the specification is publicly available.
-They may provide more in depth reviews.  Their review should not be
-taken as an endorsement of the cipher suite, extension, supported
-group, etc.
-

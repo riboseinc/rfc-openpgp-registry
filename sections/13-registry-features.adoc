@@ -31,15 +31,15 @@ Update the following registrations:
 |===
 | Value | Feature | Security Recommended | Interoperability Recommended | Reference
 
-| First octet, 0x01 | Modification Detection (packets 18 and 19) | Yes | Yes | <<RFC4880, Section 5.2.3.24 of RFC4880>>
-| First octet, 0x02 | Unassigned | |
-| First octet, 0x04 | Unassigned | |
-| First octet, 0x08 | Unassigned | |
-| First octet, 0x10 | Unassigned | |
-| First octet, 0x20 | Unassigned | |
-| First octet, 0x40 | Unassigned | |
-| First octet, 0x80 | Reserved | |
-| Second octet- | Unassigned | |
+| First octet, 0x01 | Modification Detection (packets 18 and 19) | Yes | Yes | <<RFC4880,5.2.3.24 of>>
+| First octet, 0x02 | Unassigned                                 |     |     |
+| First octet, 0x04 | Unassigned                                 |     |     |
+| First octet, 0x08 | Unassigned                                 |     |     |
+| First octet, 0x10 | Unassigned                                 |     |     |
+| First octet, 0x20 | Unassigned                                 |     |     |
+| First octet, 0x40 | Unassigned                                 |     |     |
+| First octet, 0x80 | Reserved                                   |     |     |
+| Second octet-     | Unassigned                                 |     |     |
 
 |===
 

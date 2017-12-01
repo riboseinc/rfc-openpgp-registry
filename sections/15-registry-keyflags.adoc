@@ -33,14 +33,14 @@ Update existing registrations:
 |===
 | Flag | Description | Recommended | Reference
 
-| First octet, 0x01 | This key may be used to certify other keys. | Yes | <<RFC4880, Section 5.2.3.21 of RFC4880>>
-| First octet, 0x02 | This key may be used to sign data. | Yes | <<RFC4880, Section 5.2.3.21 of RFC4880>>
-| First octet, 0x04 | This key may be used to encrypt communications. | Yes | <<RFC4880, Section 5.2.3.21 of RFC4880>>
-| First octet, 0x08 | This key may be used to encrypt storage. | Yes | <<RFC4880, Section 5.2.3.21 of RFC4880>>
-| First octet, 0x10 | The private component of this key may have been split by a secret-sharing mechanism. | Yes | <<RFC4880, Section 5.2.3.21 of RFC4880>>
-| First octet, 0x20 | This key may be used for authentication. | Yes | <<RFC4880, Section 5.2.3.21 of RFC4880>>
-| First octet, 0x40 | Private use. | | <<RFC4880, Section 5.2.3.21 of RFC4880>>
-| First octet, 0x80 | The private component of this key may be in the possession of more than one person. | Yes | <<RFC4880, Section 5.2.3.21 of RFC4880>>
+| First octet, 0x01 | This key may be used to certify other keys. | Yes | <<RFC4880,5.2.3.21 of>>
+| First octet, 0x02 | This key may be used to sign data. | Yes | <<RFC4880,5.2.3.21 of>>
+| First octet, 0x04 | This key may be used to encrypt communications. | Yes | <<RFC4880,5.2.3.21 of>>
+| First octet, 0x08 | This key may be used to encrypt storage. | Yes | <<RFC4880,5.2.3.21 of>>
+| First octet, 0x10 | The private component of this key may have been split by a secret-sharing mechanism. | Yes | <<RFC4880,5.2.3.21 of>>
+| First octet, 0x20 | This key may be used for authentication. | Yes | <<RFC4880,5.2.3.21 of>>
+| First octet, 0x40 | Private use. | | <<RFC4880,5.2.3.21 of>>
+| First octet, 0x80 | The private component of this key may be in the possession of more than one person. | Yes | <<RFC4880,5.2.3.21 of>>
 
 | Second octet- | Unassigned. | 
 

@@ -41,7 +41,9 @@ The allowed values for this column are:
 A "Security Recommendation" **MUST** only be accepted through an
 <<expert-review>>.
 
-WARNING: Cryptographic algorithms and parameters will be broken or
+Warning:
+
+* Cryptographic algorithms and parameters will be broken or
 weakened over time. Blindly implementing cipher suites listed in the
 registries is not advised. Implementers and users need to check that
 the cryptographic algorithms listed continue to provide the expected

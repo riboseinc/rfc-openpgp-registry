@@ -9,8 +9,7 @@ The key words "**Private Use**", "**Experimental Use**",
 "**Hierarchical Allocation**", "**First Come First Served**",
 "**Expert Review**", "**Specification Required**", "**RFC Required**",
 "**IETF Review**", "**Standards Action**" and "**IESG Approval**" in
-this document are to be interpreted as described in <<RFC8126,Section
-4 of>>.
+this document are to be interpreted as described in <<RFC8126,4 of>>.
 
 ////
 Designated Expert::

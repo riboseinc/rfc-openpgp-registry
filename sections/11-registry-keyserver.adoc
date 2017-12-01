@@ -38,7 +38,7 @@ Update existing registrations:
 | First octet, 0x10 | Unassigned. |             |
 | First octet, 0x20 | Unassigned. |             |
 | First octet, 0x40 | Unassigned. |             |
-| First octet, 0x80 | No-Modify   | Yes         | <<RFC4880, Section 5.3.2.17 of RFC4880>>
+| First octet, 0x80 | No-Modify   | Yes         | <<RFC4880,5.3.2.17 of>>
 | Second octet-     | Unassigned. |             |
 
 |===

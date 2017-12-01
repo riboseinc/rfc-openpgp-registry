@@ -3,7 +3,8 @@
 = Designated Experts
 
 Designated Experts are responsible for performing registration request
-reviews for **Specification Required** IANA OpenPGP registries.
+reviews for **Expert Review** and **Specification Required** IANA
+OpenPGP registries.
 
 
 == IANA Registration
@@ -44,7 +45,7 @@ end of that period, an extension will be granted and extra Designated
 Experts selected to complete the review.
 
 To allow for the allocation of values prior to publication, Designated
-Experts may approve registration once they are satisfied that such a
+Experts **MAY** approve registration once they are satisfied that such a
 specification will be published.
 
 In cases where a registration decision could be perceived as creating
@@ -57,6 +58,9 @@ another Designated Expert.
 
 A Designated Expert **MUST** take the following criteria into 
 account when reviewing registration requests:
+
+* whether the proposed registration would affect the security of
+ users of OpenPGP;
 
 * whether the proposed registration duplicates existing functionality;
 
@@ -79,6 +83,10 @@ Approvals **MUST** include an explanation.
 Denials **MUST** include an explanation and, if applicable,
 constructive suggestions as to how to make the request successful.
 
+A Designated Expert **MAY** elect to provide more in depth reviews
+than required.  Their review should not be taken as an endorsement of
+the feature or underlying primitives, such as cryptographic algorithms
+used by a registration.
 
 == Review Complaints
 

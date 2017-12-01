@@ -5,26 +5,18 @@ This document instructs IANA to make changes to a number of
 OpenPGP-related IANA registries <<RFC4880>>. These changes were
 motivated by recently proposed extensions to OpenPGP.
 
-The changes introduced by this document range from simple, e.g.,
-adding notes, to commplex, e.g., changing a registry's registration
-policy.  Intsead of listing the changes and their rationale in this,
-the introducotry, section each section provides rationale for the
-proposed change(s).
+Modelled after <<I-D.ietf-tls-iana-registry-updates>>, the document
+performs a similar function in modifying existing IANA registry
+policies for OpenPGP <<RFC4880>>.
 
+The changes introduced by this document are intended to be
+comprehensive, proposed after a thorough review of existing registry
+policy and values.  Changes include updating of registry policy,
+filling in missing values, providing recommendation of registered
+items and general housekeeping.
 
-////
-This document proposes no changes to the registration policies for TLS
-Alert [I-D.ietf-tls-tls13], TLS ContentType [I-D.ietf-tls-tls13], TLS
-HandshakeType [I-D.ietf-tls-tls13], and TLS Certificate Status Types
-[RFC6961] registries; the existing policies (Standards Action for the
-first three; IETF Review for the last), are appropriate for these
-one-byte code points because of their scarcity.
-////
-
-This document models after <<I-D.ietf-tls-iana-registry-updates>>
-to perform a similar function in updating existing IANA registry
-policies for an IETF-specified protocol, in this case, OpenPGP
-<<RFC4880>>.
+The document lists out each OpenPGP registry individually and provides
+the rationale for changes and the required changes themselves.
 
 Specifically, the following changes are pursued:
 
@@ -39,9 +31,8 @@ registries have the prefix "PGP" while some others don't.
 * Creating a missed registry defined in <<RFC4880>>, namely the
 "Signature Notation Data Subpacket Flags" registry.
 
-* A number of references in the registries point to documents
-that detail a certain algorithm, but should refer to a document (and
-the relevant section if appropriate) that
-details the implementation requirements of that algorithm within the
-context of OpenPGP. 
+* A number of references in the registries point to documents that
+detail a certain algorithm, but should refer to a document (and the
+relevant section if appropriate) that details the implementation
+requirements of that algorithm within the context of OpenPGP. 
 

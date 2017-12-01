@@ -29,10 +29,10 @@ Update the following registrations:
 |===
 | ID | Algorithm | Interoperability Recommended | Reference
 
-| 0 | Uncompressed | Yes | <<RFC4880, Section 9.3 of>>
-| 1 | ZIP | Yes | <<RFC4880, Section 9.3 of>>
-| 2 | ZLIB | Yes | <<RFC4880, Section 9.3 of>>
-| 3 | BZip2 | | <<RFC4880, Section 9.3 of>>
+| 0 | Uncompressed | Yes | <<RFC4880,9.3 of>>
+| 1 | ZIP | Yes | <<RFC4880,9.3 of>>
+| 2 | ZLIB | Yes | <<RFC4880,9.3 of>>
+| 3 | BZip2 | | <<RFC4880,9.3 of>>
 
 |===
 

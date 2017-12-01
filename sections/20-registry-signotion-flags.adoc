@@ -1,7 +1,6 @@
 = New Registry: Signature Notation Data Subpacket Notation Flags Registry
 
-This registry is created in accordance with 
-<<RFC4880, Section 5.2.3.16 of>>.
+This registry is created in accordance with <<RFC4880,5.2.3.16 of>>.
 
 The registry: 
 
@@ -28,8 +27,14 @@ The registry **SHOULD** be initialized to the following values:
 |===
 | Value | Description | Sec. Recommended | Interop. Recommended | Reference
 
-| First octet, 0x80 | This note value is human-readable text. | | Yes | <<RFC4880>>
-| First octet, - | Unassigned. | | | <<RFC4880>>
+| First octet, 0x01 | Unassigned. | | | <<RFC4880, 5.2.3.16 of>>
+| First octet, 0x02 | Unassigned. | | | <<RFC4880, 5.2.3.16 of>>
+| First octet, 0x04 | Unassigned. | | | <<RFC4880, 5.2.3.16 of>>
+| First octet, 0x08 | Unassigned. | | | <<RFC4880, 5.2.3.16 of>>
+| First octet, 0x10 | Unassigned. | | | <<RFC4880, 5.2.3.16 of>>
+| First octet, 0x20 | Unassigned. | | | <<RFC4880, 5.2.3.16 of>>
+| First octet, 0x40 | Unassigned. | | | <<RFC4880, 5.2.3.16 of>>
+| First octet, 0x80 | This note value is human-readable text. | | Yes | <<RFC4880, 5.2.3.16 of>>
 
 | Second octet- | Unassigned. | 
 

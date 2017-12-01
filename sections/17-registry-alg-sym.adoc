@@ -31,16 +31,16 @@ Update the following registrations:
 |===
 | ID | Algorithm | Security Recommended | Interoperability Recommended | Reference
 
-| 0 | Plaintext or unencrypted data | | Yes | <<RFC4880, Section 13.4 of>>
-| 1 | IDEA | No | No | <<RFC1991, Section 6.4.1 of>>
-| 2 | TripleDES (DES-EDE, [SCHNEIER] [HAC] 168 bit key derived from 192) | No | Yes | <<RFC4880, Section 13.2 of>>
-| 3 | CAST5 (128 bit key, as per RFC 2144) | No | No | <<RFC4880, Section 9.2 of>>
-| 4 | Blowfish (128 bit key, 16 rounds) |  | | <<RFC4880, Section 9.2 of>>
-| 5-6 | Reserved | | | <<RFC4880, Section 9.1 of>>
-| 7 | AES with 128-bit key | Yes | Yes | <<RFC4880, Section 9.2 of>>
-| 8 | AES with 192-bit key | Yes | | <<RFC4880, Section 9.2 of>>
-| 9 | AES with 256-bit key | Yes | Yes | <<RFC4880, Section 9.2 of>>
-| 10 | Twofish with 256-bit key | | | <<RFC4880, Section 9.2 of>>
+| 0 | Plaintext or unencrypted data | | Yes | <<RFC4880,13.4 of>>
+| 1 | IDEA | No | No | <<RFC1991,6.4.1 of>>
+| 2 | TripleDES (DES-EDE, [SCHNEIER] [HAC] 168 bit key derived from 192) | No | Yes | <<RFC4880,13.2 of>>
+| 3 | CAST5 (128 bit key, as per RFC 2144) | No | No | <<RFC4880,9.2 of>>
+| 4 | Blowfish (128 bit key, 16 rounds) |  | | <<RFC4880,9.2 of>>
+| 5-6 | Reserved | | | <<RFC4880,9.1 of>>
+| 7 | AES with 128-bit key | Yes | Yes | <<RFC4880,9.2 of>>
+| 8 | AES with 192-bit key | Yes | | <<RFC4880,9.2 of>>
+| 9 | AES with 256-bit key | Yes | Yes | <<RFC4880,9.2 of>>
+| 10 | Twofish with 256-bit key | | | <<RFC4880,9.2 of>>
 | 11 | Camellia with 128 bit key | | | <<RFC5581>>
 | 12 | Camellia with 192 bit key | | | <<RFC5581>>
 | 13 | Camellia with 256 bit key | | | <<RFC5581>>
