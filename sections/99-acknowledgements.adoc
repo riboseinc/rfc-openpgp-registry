@@ -1,5 +1,10 @@
 = Acknowledgements
 
-The authors would like to thank the Security Area Directors and the inaugural
-SECDISPATCH chairs for making this document possible.
+The authors would like to thank the the following individuals for making this document possible:
+
+* Security Area Directors: Eric Rescola and Kathleen Moriarty;
+* the inaugural SECDISPATCH chairs: Tim Polk, Nancy Cam-Winget and 
+  Russ Housley;
+* supporters of this revision scheme: Rich Salz, Sean Leonard, Richard Barnes,
+  and Daniel Kahn Gillmor.
 

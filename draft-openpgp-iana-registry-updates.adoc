@@ -51,8 +51,6 @@ include::sections/96-iana.adoc[leveloffset=+1]
 
 // must give references before appendix!
 
-include::sections/98-references.adoc[leveloffset=+1]
-
-[appendix]
 include::sections/99-acknowledgements.adoc[leveloffset=+1]
+include::sections/98-references.adoc[leveloffset=+1]
 

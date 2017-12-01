@@ -1,9 +1,0 @@
-
-[appendix]
-[#appendix-a]
-= Examples
-
-== Example 1
-
-Here's an example.
-
