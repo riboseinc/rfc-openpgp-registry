@@ -1,9 +1,10 @@
 
+[#registry-useratt]
 = PGP User Attribute Types Registry
 
 Proposed changes to the registry:
 
-* Rename registry to "User Attribute Subpacket Types"
+* Rename the registry to "OpenPGP User Attribute Subpacket Types"
 
 * Rename the column "Attribute" to "User Attribute Type"
 

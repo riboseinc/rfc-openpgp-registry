@@ -1,8 +1,9 @@
+[#registry-features]
 = Implementation Features Registry
 
 Proposed changes to the registry:
 
-* Rename the registry to "Features"
+* Rename the registry to "OpenPGP Features"
 
 * Mark value "First Octet, 0x80" as "Private Use" in the registry.
 

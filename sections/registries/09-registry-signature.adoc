@@ -1,10 +1,13 @@
+[#registry-signature]
 = Signature Subpacket Types Registry
 
 Proposed changes to the registry:
 
+* Rename the registry to "OpenPGP Signature Subpacket Types".
+
 * Rename the column "Attribute" to "Signature Subpacket Type"
 
-* Change registry policy to **Expert Review**.
+* Change registry policy to **Specification Required**.
 
 * Update its "Reference" to also refer to this document.
 

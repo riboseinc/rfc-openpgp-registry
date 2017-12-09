@@ -1,10 +1,11 @@
+[#registry-packet-versions]
 = New Packet Versions Registry
 
 This registry is currently empty.
 
 Proposed changes to the registry:
 
-* Rename the registry to "Packet Type Versions Registry"
+* Rename the registry to "OpenPGP Packet Type Versions"
 
 * It should have the following columns: "Packet Type", "Version",
 "Security Recommended", "Interoperability Recommended", "Reference"

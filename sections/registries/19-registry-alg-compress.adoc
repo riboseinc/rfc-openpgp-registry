@@ -1,6 +1,9 @@
+[#registry-alg-comp]
 = Compression Algorithms Registry
 
 Proposed changes to the registry:
+
+* Rename registry to "OpenPGP Compression Key Algorithms".
 
 * Change registry policy to **Specification Required**.
 

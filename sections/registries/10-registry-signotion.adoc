@@ -1,3 +1,4 @@
+[#registry-signotion]
 = Signature Notation Data Subpacket Notation Types Registry
 
 This registry is currently empty.
@@ -9,6 +10,8 @@ completely unmanaged". This registry should be for the <<RFC4880>>
 "IETF (name)space".
 
 Proposed changes to the registry:
+
+* Rename the registry to "OpenPGP Notation Data Subpacket Notation Types".
 
 * Change registry policy to **Specification Required**.
 

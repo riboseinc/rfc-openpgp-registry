@@ -1,7 +1,9 @@
-
+[#registry-image]
 = Image Format Subpacket Types Registry
 
 Proposed changes to the registry:
+
+* Rename the registry to "OpenPGP Image Format Subpacket Types"
 
 * Rename the column "Attribute" to "Image Format Type"
 

@@ -1,3 +1,4 @@
+[#registry-alg-hash]
 = Hash Algorithms Registry
 
 Proposed changes to the registry:

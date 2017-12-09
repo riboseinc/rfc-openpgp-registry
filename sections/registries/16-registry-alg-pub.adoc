@@ -1,6 +1,9 @@
+[#registry-alg-pub]
 = Public Key Algorithms Registry
 
 Proposed changes to the registry:
+
+* Rename registry to "OpenPGP Public Key Algorithms".
 
 * Change registry policy to **Specification Required**.
 

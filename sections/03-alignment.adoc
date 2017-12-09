@@ -1,4 +1,6 @@
-= Alignment with RFC 8126
+= Alignment Amongst OpenPGP Registries
+
+== Policy Conventions Given In RFC 8126
 
 The OpenPGP IANA registries and their policies defined in <<RFC4880>>
 pre-date <<RFC8126>> which defined the term "IETF Review" instead
@@ -13,3 +15,50 @@ Review" in place of "IETF Consensus":
 
 * TODO <<RFC4880>>
 ////
+
+== Registry Naming
+
+Registry names of IANA OpenPGP registries **SHOULD** be consistent.
+
+The following registries originally have the "PGP" prefix, and the prefix
+should be changed to "OpenPGP":
+
+* PGP String-to-Key (S2K) Registry (<<registry-s2k>>)
+
+* PGP Packet Types/Tags Registry (<<registry-packets>>)
+
+* PGP User Attribute Types Registry (<<registry-useratt>>)
+
+
+The prefix "OpenPGP" **SHOULD** be added to the following registries:
+
+* Image Format Subpacket Types Registry (<<registry-image>>)
+
+* Signature Subpacket Types Registry (<<registry-signature>>)
+
+* Signature Notation Data Subpacket Notation Types Registry
+  (<<registry-signature>>)
+
+* Key Server Preference Extensions Registry (<<registry-keyserver>>)
+
+* Reason for Revocation Extensions Registry (<<registry-revocation>>)
+
+* Implementation Features Registry (<<registry-features>>)
+
+* New Packet Versions Registry (<<registry-packet-versions>>)
+
+* Public Key Algorithms Registry (<<registry-alg-pub>>)
+
+* Symmetric Key Algorithms Registry (<<registry-alg-sym>>)
+
+* Hash Algorithms Registry (<<registry-alg-hash>>)
+
+* Compression Algorithms Registry (<<registry-alg-comp>>)
+
+This renaming is not necessary for the "OpenPGP Signature Notation
+Data Subpacket Notation Flags Registry" (<<registry-signotion-data>>)
+since it is newly created according to this convention.
+
+For specific recommendations, please see the corresponding sections in
+<<registries>>.
+

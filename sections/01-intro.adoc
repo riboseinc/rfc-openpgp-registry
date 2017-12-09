@@ -20,19 +20,19 @@ the rationale for changes and the required changes themselves.
 
 Specifically, the following changes are pursued:
 
-* Alignment of registry policies with <<RFC8126>>
+* Alignment of registry policies with <<RFC8126>>;
 
 * Consistency of existing OpenPGP registries, for example, some
-registries have the prefix "PGP" while some others don't.
+registries have the prefix "PGP" while some others don't;
 
 * Missing values in registries while having been defined in
-<<RFC4880>>
+<<RFC4880>;
 
 * Creating a missed registry defined in <<RFC4880>>, namely the
-"Signature Notation Data Subpacket Flags" registry.
+"OpenPGP Signature Notation Data Subpacket Flags" registry;
 
 * A number of references in the registries point to documents that
 detail a certain algorithm, but should refer to a document (and the
 relevant section if appropriate) that details the implementation
-requirements of that algorithm within the context of OpenPGP. 
+requirements of that algorithm within the context of OpenPGP.
 

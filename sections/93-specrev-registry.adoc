@@ -1,11 +1,12 @@
 
 [#registry-spec-reg]
-= Registries With The Specification Required Policy
+= Registries With The "Specification Required" Policy
 
 :openpgp-list: \openpgp-reg-review@ietf.org
 
-**Specification Required** registry requests must be submitted to 
-the Expert Pool (<<expert-pool>>) through the {openpgp-list} mailing list.
+Registration requests for a **Specification Required** and **Expert
+Review** registry must be submitted to the Expert Pool
+(<<expert-pool>>) through the {openpgp-list} mailing list.
 
 The registration request will be deemed successful after three
 approved Expert Reviews (<<expert-review>>), and the Designated
@@ -29,14 +30,14 @@ An outcome of a registration request is determined by results of
 Expert Reviews (<<expert-review>>).
 
 A registration request is approved once it receives a minimum of three
-approved Expert Reviews.
+Expert Reviews that result in approval.
 
 The outcomes of a request review are:
 
-* Approved: once there are three approved Designated Expert reviews
+* Approval: once there are three approved Designated Expert reviews
 within the review period;
 
-* Denied: there have been more than three Designated Expert reviews
+* Denial: there have been more than three Designated Expert reviews
 within the review period but have not met the approval threshold of
 three approvals.
 

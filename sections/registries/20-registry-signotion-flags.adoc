@@ -1,4 +1,5 @@
-= New Registry: Signature Notation Data Subpacket Notation Flags Registry
+[#registry-signotion-data]
+= New Registry: OpenPGP Signature Notation Data Subpacket Notation Flags Registry
 
 This registry is created in accordance with <<RFC4880,5.2.3.16 of>>.
 

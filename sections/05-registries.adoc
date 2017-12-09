@@ -1,0 +1,20 @@
+[#registries]
+= IANA OpenPGP Registries
+
+include::registries/05-registry-s2k.adoc[leveloffset=+1]
+include::registries/06-registry-packets.adoc[leveloffset=+1]
+include::registries/07-registry-user.adoc[leveloffset=+1]
+include::registries/08-registry-image.adoc[leveloffset=+1]
+include::registries/09-registry-signature.adoc[leveloffset=+1]
+include::registries/10-registry-signotion.adoc[leveloffset=+1]
+include::registries/11-registry-keyserver.adoc[leveloffset=+1]
+include::registries/12-registry-revocation.adoc[leveloffset=+1]
+include::registries/13-registry-features.adoc[leveloffset=+1]
+include::registries/14-registry-newpacket.adoc[leveloffset=+1]
+include::registries/15-registry-keyflags.adoc[leveloffset=+1]
+include::registries/16-registry-alg-pub.adoc[leveloffset=+1]
+include::registries/17-registry-alg-sym.adoc[leveloffset=+1]
+include::registries/18-registry-alg-hash.adoc[leveloffset=+1]
+include::registries/19-registry-alg-compress.adoc[leveloffset=+1]
+include::registries/20-registry-signotion-flags.adoc[leveloffset=+1]
+

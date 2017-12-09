@@ -47,27 +47,29 @@ Designated Experts selected to complete the review.
 In cases where a review assignment could be perceived as creating
 a conflict of interest for a particular Designated Expert, that
 Designated Expert **SHOULD** defer review responsibility to
-another Designated Expert. Violations of this rule will be eligible
-to the resolution procedure detailed in <<review-complaints>>.
+another Designated Expert, as described in <<RFC8126,5.2 of>>.
 
 
 === Review Criteria
 
 A Designated Expert **MUST** take the following criteria into 
-account when reviewing registration requests:
+account when reviewing registration requests.
 
-* whether the proposed registration would affect the security of
- users of OpenPGP;
+For **Specification Required** registries:
 
 * whether the proposed registration duplicates existing functionality;
-
-* whether the proposed registration is likely to be of general
-applicability;
 
 * the clarity of the proposed registration description;
 
 * whether the specification of the proposed registration item is
-publicly available.
+  publicly available;
+
+* whether the proposed registration would affect the security of
+  users of OpenPGP; and
+
+* whether the proposed registration is likely to be of general
+  applicability.
+
 
 
 == Review Outcomes
@@ -82,22 +84,24 @@ than required.  Their review should not be taken as an endorsement of
 the feature or underlying primitives, such as cryptographic algorithms
 used by a registration.
 
-[#review-complaints]
-== Review Complaints
+[#review-appeals]
+== Review Appeals
 
 :iesg-mailing-list: \iesg@ietf.org
 
-Review complaints **SHOULD** be directly brought to the IESG for
+The review appeals process is in accordance with <<RFC8126,10>>, which
+specifies that the normal IETF appeals process as described in
+<<RFC2026,6.5 of>> should be followed.
+
+Review appeals **SHOULD** be directly brought to the IESG for
 resolution through the {iesg-mailing-list} mailing list.
 
-The following issues are eligible for the dispute process:
+The following issues are eligible for the appeals process:
 
 * Registration requests that have not received any Designated Expert
 reviews for a period longer than 21 days.
 
-* A rejection was performed by an inappropriate Designated Expert, for
+* A review was performed by an inappropriate Designated Expert, for
 example, who is strongly suspected of a conflict of interest or has
 demonstrated unprofessional behavior or impartiality.
-
-
 

@@ -1,10 +1,11 @@
+[#registry-s2k]
 = PGP String-to-Key (S2K) Registry
 
 Proposed changes to the registry:
 
-* Rename registry to "String-to-Key (S2K) Algorithms"
+* Rename the registry to "OpenPGP String-to-Key (S2K) Algorithms"
 
-* Change registry policy to **Expert Review**.
+* Change registry policy to **Specification Required**.
 
 * Update its "Reference" to also refer to this document.
 

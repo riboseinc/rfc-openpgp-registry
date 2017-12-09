@@ -1,12 +1,13 @@
+[#registry-revocation]
 = Reason for Revocation Extensions Registry
 
 Proposed changes to the registry:
 
-* Rename the registry to "Reasons for Revocation"
+* Rename the registry to "OpenPGP Reasons for Revocation"
 
 * Rename the column "Flag" to "Reason"
 
-* Change registry policy to **Expert Review**.
+* Change registry policy to **Specification Required**.
 
 * Update its "Reference" to also refer to this document.
 

@@ -1,3 +1,4 @@
+[#registry-alg-sym]
 = Symmetric Key Algorithms Registry
 
 Proposed changes to the registry:

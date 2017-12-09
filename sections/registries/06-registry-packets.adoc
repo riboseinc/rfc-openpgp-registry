@@ -1,8 +1,9 @@
+[#registry-packets]
 = PGP Packet Types/Tags Registry
 
 Proposed changes to the registry:
 
-* Rename the registry to "Packet Types"
+* Rename the registry to "OpenPGP Packet Types"
 
 * Rename the column "Attribute" to "Packet Type"
 

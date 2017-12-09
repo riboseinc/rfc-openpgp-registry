@@ -2,7 +2,7 @@
 
 Proposed changes to the registry:
 
-* Rename the registry to "Key Flags"
+* Rename the registry to "OpenPGP Key Flags"
 
 * Rename the column "Value" to "Flag"
 

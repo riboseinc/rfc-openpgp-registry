@@ -1,8 +1,9 @@
+[#registry-keyserver]
 = Key Server Preference Extensions Registry
 
 Proposed changes to the registry:
 
-* Rename the registry to "Key Server Preferences"
+* Rename the registry to "OpenPGP Key Server Preferences"
 
 * Rename the column "First octet" to "Flag"
 
