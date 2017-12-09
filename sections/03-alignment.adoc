@@ -4,8 +4,12 @@ The OpenPGP IANA registries and their policies defined in <<RFC4880>>
 pre-date <<RFC8126>> which defined the term "IETF Review" instead
 of the now-outdated term "IETF Consensus" <<RFC2434>>.
 
+This draft updates policies of the OpenPGP IANA registries to align
+with the terms specified in <<RFC8126>>.
+
+////
 IANA [SHALL update/has updated] the following registries to use "IETF
 Review" in place of "IETF Consensus":
 
 * TODO <<RFC4880>>
-
+////

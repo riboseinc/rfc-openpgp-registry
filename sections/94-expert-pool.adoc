@@ -40,18 +40,15 @@ On submission of a review request, five Designated Experts
 are sought out for the review of the request. These Designated Experts
 must provide a review decision response within 21 days of submission.
 
-If less than five Designated Experts have performed a review by the
-end of that period, an extension will be granted and extra Designated
-Experts selected to complete the review.
+If less than three Designated Experts have performed a review by the
+end of that period, an extension of 21 days will be granted and extra
+Designated Experts selected to complete the review.
 
-To allow for the allocation of values prior to publication, Designated
-Experts **MAY** approve registration once they are satisfied that such a
-specification will be published.
-
-In cases where a registration decision could be perceived as creating
+In cases where a review assignment could be perceived as creating
 a conflict of interest for a particular Designated Expert, that
 Designated Expert **SHOULD** defer review responsibility to
-another Designated Expert.
+another Designated Expert. Violations of this rule will be eligible
+to the resolution procedure detailed in <<review-complaints>>.
 
 
 === Review Criteria
@@ -69,9 +66,6 @@ applicability;
 
 * the clarity of the proposed registration description;
 
-* whether the proposed registration is likely to be of general
-applicability;
-
 * whether the specification of the proposed registration item is
 publicly available.
 
@@ -88,6 +82,7 @@ than required.  Their review should not be taken as an endorsement of
 the feature or underlying primitives, such as cryptographic algorithms
 used by a registration.
 
+[#review-complaints]
 == Review Complaints
 
 :iesg-mailing-list: \iesg@ietf.org
