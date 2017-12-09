@@ -3,6 +3,8 @@
 
 Proposed changes to the registry:
 
+* Rename registry to "OpenPGP Hash Key Algorithms".
+
 * Change registry policy to **Specification Required**.
 
 * Update its "Reference" to also refer to this document.
