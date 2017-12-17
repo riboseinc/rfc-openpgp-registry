@@ -5,11 +5,12 @@
 :updates: 4880
 :status: info
 :ipr: trust200902
-:submissionType: individual
-:area: Internet
+:submission-type: IETF
+:area: sec
 :intended-series: full-standard
-:workgroup: SAAG
-:revdate: 2017-12-09T00:00:00Z
+:workgroup: Security Area Advisory Group
+:revdate: 2017-12-16T00:00:00Z
+:rfc2629xslt: true
 :fullname: Ronald Henry Tse
 :lastname: Tse
 :forename_initials: R. H.

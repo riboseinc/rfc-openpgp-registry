@@ -26,9 +26,13 @@ an interoperable way.
 Update the following registrations:
 
 |===
-| Value | Image Format Type | Interoperability Recommended | Reference
+| Value | Image Format Type | REC-I | Reference
 
+| 0 | Reserved        | | <<RFC4880>>
 | 1 | JPEG | Yes | <<RFC4880>>
+| 2-99 | Unassigned  | |
+| 100-110 | Private or Experimental Use  | | <<RFC4880>>
+| 111-255 | Unassigned  | |
 
 |===
 

@@ -1,10 +1,11 @@
 = Acknowledgements
 
-The authors would like to thank the the following individuals for making this document possible:
+The authors would like to thank the following individuals for making
+this document possible:
 
 * Security Area Directors: Eric Rescola and Kathleen Moriarty;
-* The inaugural SECDISPATCH chairs: Tim Polk, Nancy Cam-Winget and 
+* The inaugural SECDISPATCH chairs: Tim Polk, Nancy Cam-Winget and
   Russ Housley;
-* Supporters of this revision scheme: Rich Salz, Sean Leonard, Richard Barnes,
-  and Daniel Kahn Gillmor.
+* Supporters of this revision scheme: Rich Salz, Sean Leonard, Richard
+  Barnes, and Daniel Kahn Gillmor.
 

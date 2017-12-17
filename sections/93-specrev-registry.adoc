@@ -4,8 +4,8 @@
 
 :openpgp-list: \openpgp-reg-review@ietf.org
 
-Registration requests for a **Specification Required** and **Expert
-Review** registry must be submitted to the Expert Pool
+Registration requests for a **Specification Required** and 
+**Expert Review** registry must be submitted to the Expert Pool
 (<<expert-pool>>) through the {openpgp-list} mailing list.
 
 The registration request will be deemed successful after three

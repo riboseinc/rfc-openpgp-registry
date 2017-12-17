@@ -32,7 +32,7 @@ the algorithm itself.
 Update the following registrations:
 
 |===
-| ID | Algorithm | Text Name | Security Recommended | Interop Recommended | Reference
+| ID | Algorithm | Text Name | REC-S | REC-I | Reference
 
 | 1   | MD5         | "MD5"       | No  | No                          | <<RFC4880,9.4 of>>
 | 2   | SHA-1       | "SHA1"      | No  | Yes                         | <<RFC4880,9.4 of>>
@@ -42,6 +42,9 @@ Update the following registrations:
 | 9   | SHA384      | "SHA384"    | Yes |                             | <<RFC4880,9.4 of>>
 | 10  | SHA512      | "SHA512"    | Yes | Yes                         | <<RFC4880,9.4 of>>
 | 11  | SHA224      | "SHA224"    | Yes |                             | <<RFC4880,9.4 of>>
+| 12-99 | Unassigned |    | | | |
+| 100-110 | Private or Experimental Use | | | | <<RFC4880,9.4 of>>
+| 111-255 | Unassigned | | | |
 
 |===
 

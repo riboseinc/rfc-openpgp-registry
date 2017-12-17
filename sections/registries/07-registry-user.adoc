@@ -27,9 +27,13 @@ an interoperable way.
 Update the following registrations:
 
 |===
-| Attribute Type | Interoperability Recommended | Reference
+| Value | Attribute Type | REC-I | Reference
 
-| image          | Yes                          | <<RFC4880>>
+| 0 | Reserved        | | <<RFC4880>>
+| 1 | image          | Yes | <<RFC4880>>
+| 2-99 | Unassigned  | |
+| 100-110 | Private or Experimental Use  | | <<RFC4880>>
+| 111-255 | Unassigned  | |
 
 |===
 

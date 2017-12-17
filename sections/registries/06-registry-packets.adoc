@@ -27,7 +27,7 @@ an interoperable way.
 Update the following registrations:
 
 |===
-| Value | Packet Type | Security Recommended | Interoperability Recommended | Reference
+| Value | Packet Type | REC-S | REC-I | Reference
 
 | 0  | Reserved - a packet tag **MUST NOT** have this value | No  | Yes | <<RFC4880>>
 | 1  | Public-Key Encrypted Session Key Packet              | Yes | Yes | <<RFC4880>>
@@ -44,9 +44,12 @@ Update the following registrations:
 | 12 | Trust Packet                                         |     | No  | <<RFC4880>>
 | 13 | User ID Packet                                       |     | Yes | <<RFC4880>>
 | 14 | Public Subkey Packet                                 | Yes | Yes | <<RFC4880>>
+| 15-16 | Unknown                                      | | | <<RFC4880>>
 | 17 | User Attribute Packet                                |     | Yes | <<RFC4880>>
 | 18 | Sym. Encrypted and Integrity Protected Data Packet   | Yes | Yes | <<RFC4880>>
 | 19 | Modification Detection Code Packet                   | Yes | Yes | <<RFC4880>>
+| 20-59 | Unassigned                                    | | |
+| 60-63 | Private or Experimental Use                                      | | | <<RFC4880>>
 
 |===
 

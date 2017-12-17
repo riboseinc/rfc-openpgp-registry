@@ -27,13 +27,17 @@ an interoperable way.
 Update the following registrations:
 
 |===
-| Value | Reason | Interoperability Recommended | Reference
+| Value | Reason | REC-I | Reference
 
 | 0 | No reason specified (key revocations or cert revocations) | Yes | <<RFC4880,5.2.3.23 of>>
 | 1 | Key is superseded (key revocations) | Yes | <<RFC4880,5.2.3.23 of>>
 | 2 | Key material has been compromised (key revocations) | Yes | <<RFC4880,5.2.3.23 of>>
 | 3 | Key is retired and no longer used (key revocations) | Yes | <<RFC4880,5.2.3.23 of>>
+| 4-31 | Unassigned | | <<RFC4880,5.2.3.23 of>>
 | 32 | User ID information is no longer valid (cert revocations) | Yes | <<RFC4880,5.2.3.23 of>>
+| 33-99 | Unassigned | |
+| 100-110 | Private Use | | <<RFC4880,5.2.3.23 of>>
+| 111-255 | Unassigned | |
 
 |===
 

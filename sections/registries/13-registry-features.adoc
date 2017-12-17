@@ -9,6 +9,9 @@ Proposed changes to the registry:
 
 * Rename the column "Value" to "Flag"
 
+* Add a column "Octet Ordinal" to indicate the ordinal of the octet of
+  which the "Flag" field is read from.
+
 * Change registry policy to **Specification Required**.
 
 * Update its "Reference" to also refer to this document.
@@ -30,17 +33,17 @@ an interoperable way.
 Update the following registrations:
 
 |===
-| Value | Feature | Security Recommended | Interoperability Recommended | Reference
+| Octet Ordinal | Flag | Feature | REC-S | REC-I | Reference
 
-| First octet, 0x01 | Modification Detection (packets 18 and 19) | Yes | Yes | <<RFC4880,5.2.3.24 of>>
-| First octet, 0x02 | Unassigned                                 |     |     |
-| First octet, 0x04 | Unassigned                                 |     |     |
-| First octet, 0x08 | Unassigned                                 |     |     |
-| First octet, 0x10 | Unassigned                                 |     |     |
-| First octet, 0x20 | Unassigned                                 |     |     |
-| First octet, 0x40 | Unassigned                                 |     |     |
-| First octet, 0x80 | Reserved                                   |     |     |
-| Second octet-     | Unassigned                                 |     |     |
+| 1 | 0x01 | Modification Detection (packets 18 and 19) | Yes | Yes | <<RFC4880,5.2.3.24 of>>
+| 1 | 0x02 | Unassigned                                 |     |     |
+| 1 | 0x04 | Unassigned                                 |     |     |
+| 1 | 0x08 | Unassigned                                 |     |     |
+| 1 | 0x10 | Unassigned                                 |     |     |
+| 1 | 0x20 | Unassigned                                 |     |     |
+| 1 | 0x40 | Unassigned                                 |     |     |
+| 1 | 0x80 | Unassigned                                 |     |     |
+| 2- |     | Unassigned                                 |     |     |
 
 |===
 

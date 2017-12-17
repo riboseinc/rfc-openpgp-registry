@@ -17,8 +17,9 @@ practice in OpenPGP implementations.
 
 There are two types of recommendations considered here:
 
-* Recommended for security
-* Recommended for interoperability
+* Recommended for security (abbreviated as "REC-S" in this document)
+* Recommended for interoperability (abbreviated as "REC-I" in this
+  document)
 
 == Security Recommendations
 
@@ -38,16 +39,17 @@ The allowed values for this column are:
 * No: Not recommended, this algorithm is considered insecure;
 * Empty: No comment, there is no recommendation on this algorithm.
 
-A "Security Recommendation" **MUST** only be accepted through an Expert Review
-described in <<expert-review>>.
+A "Security Recommendation" **MUST** only be accepted through an
+Expert Review described in <<expert-review>>.
 
-Warning:
+=== Weakening Of Cryptographic Algorithms And Parameters
 
-* Cryptographic algorithms and parameters will be broken or
-weakened over time. Blindly implementing cipher suites listed in the
-registries is not advised. Implementers and users need to check that
-the cryptographic algorithms listed continue to provide the expected
-level of security.
+Cryptographic algorithms and parameters will be broken or weakened
+over time. Blindly implementing cipher suites listed in the registries
+is not advised. 
+
+Implementers and users **SHOULD** check that the cryptographic
+algorithms listed continue to provide the expected level of security.
 
 
 == Interoperability Recommendations

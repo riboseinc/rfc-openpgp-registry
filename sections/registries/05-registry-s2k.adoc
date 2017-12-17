@@ -24,11 +24,15 @@ OpenPGP community.
 Update the following registrations:
 
 |===
-| S2K Type | Security Recommended | Interoperability Recommended
+| ID | S2K Type | REC-S | REC-I | References
 
-| Simple S2K | No | Yes
-| Salted S2K | No | Yes
-| Iterated and Salted S2K | Yes | Yes
+| 0 | Simple S2K | No | Yes | <<RFC4880>>
+| 1 | Salted S2K | No | Yes | <<RFC4880>>
+| 2 | Reserved |  |  | <<RFC4880>>
+| 3 | Iterated and Salted S2K | Yes | Yes | <<RFC4880>>
+| 4-99 | Unassigned | | |
+| 100-110 | Private or Experimental Use | | | <<RFC4880>>
+| 111-255 | Unassigned | | |
 
 |===
 
