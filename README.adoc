@@ -1,7 +1,7 @@
-= Internet-Draft: Template For Writing RFC / Internet Drafts in AsciiDoc
+= Internet-Draft: SECDISPATCH OpenPGP Registry Update
 
-image:https://img.shields.io/travis/riboseinc/rfc-in-asciidoc-template/master.svg[
-	Build Status, link="https://travis-ci.org/riboseinc/rfc-in-asciidoc-template"]
+image:https://img.shields.io/travis/riboseinc/rfc-openpgp-registry/master.svg[
+	Build Status, link="https://travis-ci.org/riboseinc/rfc-openpgp-registry"]
 
 This Internet-Draft is written in pure AsciiDoc using the excellent
 https://github.com/riboseinc/asciidoctor-rfc[`asciidoctor-rfc` gem].
@@ -10,7 +10,7 @@ https://github.com/riboseinc/asciidoctor-rfc[`asciidoctor-rfc` gem].
 
 [source,sh]
 ----
-git clone https://github.com/riboseinc/rfc-in-asciidoc-template
+git clone https://github.com/riboseinc/rfc-openpgp-registry
 ----
 
 == Installing Build Tools
@@ -35,7 +35,7 @@ bundle install
 ----
 make all
 # or
-export ID_NAME=document-template
+export ID_NAME=openpgp-iana-registry-updates
 make draft-${ID_NAME}.txt
 ----
 
@@ -50,7 +50,7 @@ prevent it complaining about the location.
 
 [source,sh]
 ----
-export ID_NAME=document-template
+export ID_NAME=openpgp-iana-registry-updates
 make draft-${ID_NAME}.nits
 ----
 
@@ -58,7 +58,7 @@ make draft-${ID_NAME}.nits
 
 [source,sh]
 ----
-export ID_NAME=document-template
+export ID_NAME=openpgp-iana-registry-updates
 pcregrep --color='auto' -n "[\x80-\xFF]" draft-${ID_NAME}.xml
 ----
 
@@ -66,7 +66,7 @@ pcregrep --color='auto' -n "[\x80-\xFF]" draft-${ID_NAME}.xml
 
 [source,sh]
 ----
-export ID_NAME=document-template
+export ID_NAME=openpgp-iana-registry-updates
 make clean all; open draft-${ID_NAME}.txt
 ----
 
