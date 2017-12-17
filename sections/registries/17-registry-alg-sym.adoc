@@ -5,6 +5,13 @@ Proposed changes to the registry:
 
 * Rename registry to "OpenPGP Symmetric Key Algorithms".
 
+* Algorithm descriptions have been simplified and applicable
+  references moved to the "Reference" column.
+
+* All algorithm descriptions with "[n+] bit" is updated to "[n+]-bit"
+  for consistency, for example, the phrase "128 bit key" becomes
+  "128-bit key".
+
 * Change registry policy to **Specification Required**.
 
 * Update its "Reference" to also refer to this document.
