@@ -9,7 +9,7 @@
 :area: sec
 :intended-series: full-standard
 :workgroup: Security Area Advisory Group
-:revdate: 2017-12-16T00:00:00Z
+:revdate: 2018-01-06T00:00:00Z
 :rfc2629xslt: true
 :fullname: Ronald Henry Tse
 :lastname: Tse

@@ -3,7 +3,7 @@
 image:https://img.shields.io/travis/riboseinc/rfc-openpgp-registry/master.svg[
 	Build Status, link="https://travis-ci.org/riboseinc/rfc-openpgp-registry"]
 
-This Internet-Draft is written in pure AsciiDoc using the excellent
+This Internet-Draft is written in pure AsciiRFC using the excellent
 https://github.com/riboseinc/asciidoctor-rfc[`asciidoctor-rfc` gem].
 
 == Fetching the document
