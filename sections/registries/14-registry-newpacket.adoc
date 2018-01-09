@@ -10,7 +10,7 @@ Proposed changes to the registry:
 * It should have the following columns: "Packet Type", "Version",
 "Security Recommended", "Interoperability Recommended", "Reference"
 
-* Change registry policy to **RFC Required**.
+* Change registry policy to *RFC Required*.
 
 * Update its "Reference" to also refer to this document.
 
@@ -18,7 +18,7 @@ Proposed changes to the registry:
 +
 ----
 Note: Experts are to verify that the proposed registration
-**SHOULD** provide notable benefits for the wider OpenPGP community,
+*SHOULD* provide notable benefits for the wider OpenPGP community,
 and provides a publicly-available standard that can be implemented in
 an interoperable way.
 ----

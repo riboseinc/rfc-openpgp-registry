@@ -5,7 +5,7 @@ Proposed changes to the registry:
 
 * Rename the registry to "OpenPGP String-to-Key (S2K) Algorithms"
 
-* Change registry policy to **Specification Required**.
+* Change registry policy to *Specification Required*.
 
 * Update its "Reference" to also refer to this document.
 

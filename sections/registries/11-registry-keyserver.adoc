@@ -12,7 +12,7 @@ Proposed changes to the registry:
 
 * Rename the column "Extension" to "Description"
 
-* Change registry policy to **Specification Required**.
+* Change registry policy to *Specification Required*.
 
 * Update its "Reference" to also refer to this document.
 
@@ -25,7 +25,7 @@ Add the following note:
 This is a variable-length bit field.
 
 Note: Experts are to verify that the proposed registration
-**SHOULD** provide notable benefits for the wider OpenPGP community,
+*SHOULD* provide notable benefits for the wider OpenPGP community,
 and provides a publicly-available standard that can be implemented in
 an interoperable way.
 ----

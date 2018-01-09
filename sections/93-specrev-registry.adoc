@@ -4,8 +4,8 @@
 
 :openpgp-list: \openpgp-reg-review@ietf.org
 
-Registration requests for a **Specification Required** and 
-**Expert Review** registry must be submitted to the Expert Pool
+Registration requests for a *Specification Required* and 
+*Expert Review* registry must be submitted to the Expert Pool
 (<<expert-pool>>) through the {openpgp-list} mailing list.
 
 The registration request will be deemed successful after three
@@ -15,7 +15,7 @@ Experts will request IANA to register the proposed registration.
 
 == Registration Request Procedure
 
-Registration requests sent to the mailing list for review **SHOULD**
+Registration requests sent to the mailing list for review *SHOULD*
 use an appropriate subject (e.g., "Registration request: new algorithm
 in Symmetric Encryption registry").
 
@@ -45,13 +45,13 @@ three approvals.
 == Temporary Registrations
 
 To allow for the allocation of values prior to publication, Designated
-Experts **MAY** approve a temporary registration once they are
+Experts *MAY* approve a temporary registration once they are
 satisfied that such a specification will be published. 
 
 This temporary registration has a 1 year validity, of which when
 expired will be automatically revoked. 
 
 Once the specification that the proposal relies is published within
-this period, the Designated Experts **SHOULD** request IANA to convert
+this period, the Designated Experts *SHOULD* request IANA to convert
 this registration to an official one.
 

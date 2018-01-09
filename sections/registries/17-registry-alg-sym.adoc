@@ -12,7 +12,7 @@ Proposed changes to the registry:
   for consistency, for example, the phrase "128 bit key" becomes
   "128-bit key".
 
-* Change registry policy to **Specification Required**.
+* Change registry policy to *Specification Required*.
 
 * Update its "Reference" to also refer to this document.
 
@@ -28,7 +28,7 @@ Add the following note:
 
 ----
 Note: Experts are to verify that the proposed registration
-**SHOULD** provide notable benefits for the wider OpenPGP community,
+*SHOULD* provide notable benefits for the wider OpenPGP community,
 and provides a publicly-available standard that can be implemented in
 an interoperable way. References to IETF-published documents are
 preferred. The "Reference" value should point to a document that

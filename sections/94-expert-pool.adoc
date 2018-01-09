@@ -3,20 +3,20 @@
 = Designated Experts
 
 Designated Experts are responsible for performing registration request
-reviews for **Expert Review** and **Specification Required** IANA
+reviews for *Expert Review* and *Specification Required* IANA
 OpenPGP registries.
 
 
 == IANA Registration
 
-IANA **MUST** only accept registry updates from the Designated Experts
-and **SHOULD** direct all requests for registration to the review
+IANA *MUST* only accept registry updates from the Designated Experts
+and *SHOULD* direct all requests for registration to the review
 mailing list.
 
 
 == Eligibility Criteria
 
-A Designated Expert **SHOULD** have a thorough understanding,
+A Designated Expert *SHOULD* have a thorough understanding,
 demonstrated knowledge and experience of OpenPGP <<RFC4880>> and its
 Standards Track extensions.
 
@@ -26,7 +26,7 @@ Standards Track extensions.
 Designated Experts are judged and selected by the IETF Area
 Director of which the "openpgp" workgroup belongs.
 
-The selected pool of Designated Experts **SHOULD** be able to
+The selected pool of Designated Experts *SHOULD* be able to
 represent the perspectives of different applications using this
 specification, in order to enable broadly informed review of
 registration decisions. 
@@ -46,16 +46,16 @@ Designated Experts selected to complete the review.
 
 In cases where a review assignment could be perceived as creating
 a conflict of interest for a particular Designated Expert, that
-Designated Expert **SHOULD** defer review responsibility to
+Designated Expert *SHOULD* defer review responsibility to
 another Designated Expert, as described in <<RFC8126,5.2 of>>.
 
 
 === Review Criteria
 
-A Designated Expert **MUST** take the following criteria into 
+A Designated Expert *MUST* take the following criteria into 
 account when reviewing registration requests.
 
-For **Specification Required** registries:
+For *Specification Required* registries:
 
 * whether the proposed registration duplicates existing functionality;
 
@@ -74,12 +74,12 @@ For **Specification Required** registries:
 
 == Review Outcomes
 
-Approvals **MUST** include an explanation.
+Approvals *MUST* include an explanation.
 
-Denials **MUST** include an explanation and, if applicable,
+Denials *MUST* include an explanation and, if applicable,
 constructive suggestions as to how to make the request successful.
 
-A Designated Expert **MAY** elect to provide more in depth reviews
+A Designated Expert *MAY* elect to provide more in depth reviews
 than required.  Their review should not be taken as an endorsement of
 the feature or underlying primitives, such as cryptographic algorithms
 used by a registration.
@@ -93,7 +93,7 @@ The review appeals process is in accordance with <<RFC8126,10>>, which
 specifies that the normal IETF appeals process as described in
 <<RFC2026,6.5 of>> should be followed.
 
-Review appeals **SHOULD** be directly brought to the IESG for
+Review appeals *SHOULD* be directly brought to the IESG for
 resolution through the {iesg-mailing-list} mailing list.
 
 The following issues are eligible for the appeals process:

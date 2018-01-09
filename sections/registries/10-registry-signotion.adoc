@@ -13,7 +13,7 @@ Proposed changes to the registry:
 
 * Rename the registry to "OpenPGP Notation Data Subpacket Notation Types".
 
-* Change registry policy to **Specification Required**.
+* Change registry policy to *Specification Required*.
 
 * Update its "Reference" to also refer to this document.
 
@@ -34,15 +34,15 @@ To:
 Notation names are arbitrary strings encoded in UTF-8, and there are
 two namespaces:
 
-* IETF namespace: keys are of any string but **MUST NOT** contain the
-"@" character (0x40). Allowed keys **MUST** by registered in this
+* IETF namespace: keys are of any string but *MUST NOT* contain the
+"@" character (0x40). Allowed keys *MUST* by registered in this
 registry.
 
 * User namespace: keys are of form "[name]@[domain]", these are
 unmanaged keys and NOT maintained by this registry.
 
 Note: Experts are to verify that the proposed registration
-is necessary and **SHOULD** provide general benefits for the wider
+is necessary and *SHOULD* provide general benefits for the wider
 OpenPGP community.
 ----
 

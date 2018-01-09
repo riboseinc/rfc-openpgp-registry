@@ -18,10 +18,10 @@ Review" in place of "IETF Consensus":
 
 == Registry Naming
 
-Registry names of IANA OpenPGP registries **SHOULD** be consistent.
+Registry names of IANA OpenPGP registries *SHOULD* be consistent.
 
 The following registries originally have the "PGP" prefix, and the prefix
-**SHOULD** be changed to "OpenPGP":
+*SHOULD* be changed to "OpenPGP":
 
 * PGP String-to-Key (S2K) Registry (<<registry-s2k>>)
 
@@ -30,7 +30,7 @@ The following registries originally have the "PGP" prefix, and the prefix
 * PGP User Attribute Types Registry (<<registry-useratt>>)
 
 
-The prefix "OpenPGP" **SHOULD** be added to the following registries:
+The prefix "OpenPGP" *SHOULD* be added to the following registries:
 
 * Image Format Subpacket Types Registry (<<registry-image>>)
 

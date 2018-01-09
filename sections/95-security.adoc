@@ -1,7 +1,7 @@
 
 = Security Considerations
 
-The change to **Specification Required** from **IETF Review** lowers
+The change to *Specification Required* from *IETF Review* lowers
 the barrier to add functionality and cryptographic algorithms for
 OpenPGP. 
 
@@ -12,9 +12,9 @@ difficult for national cipher suites.
 
 Security Recommended algorithms are regarded as secure for general use
 at the time of registration. However, since cryptographic algorithms and
-parameters will be broken or weakened over time, it **MAY** be
+parameters will be broken or weakened over time, it *MAY* be
 possible that the recommended status in the registry lags behind the
 most recent advances in cryptanalysis.  Implementers and users
-**SHOULD** check that the cryptographic algorithms listed continue to
+*SHOULD* check that the cryptographic algorithms listed continue to
 provide the expected level of security desired.
 

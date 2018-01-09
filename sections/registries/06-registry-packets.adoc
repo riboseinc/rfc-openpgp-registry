@@ -7,7 +7,7 @@ Proposed changes to the registry:
 
 * Rename the column "Attribute" to "Packet Type"
 
-* Change registry policy to **RFC Required**.
+* Change registry policy to *RFC Required*.
 
 * Update its "Reference" to also refer to this document.
 
@@ -19,7 +19,7 @@ Add the following note:
 ----
 Note: Due to the scarcity of codepoints in this registry,
 experts are to verify that the proposed registration
-**MUST** provide notable benefits for the wider OpenPGP community,
+*MUST* provide notable benefits for the wider OpenPGP community,
 and provides a publicly-available standard that can be implemented in
 an interoperable way.
 ----
@@ -29,7 +29,7 @@ Update the following registrations:
 |===
 | Value | Packet Type | REC-S | REC-I | Reference
 
-| 0  | Reserved - a packet tag **MUST NOT** have this value | No  | Yes | <<RFC4880>>
+| 0  | Reserved - a packet tag *MUST NOT* have this value | No  | Yes | <<RFC4880>>
 | 1  | Public-Key Encrypted Session Key Packet              | Yes | Yes | <<RFC4880>>
 | 2  | Signature Packet                                     | Yes | Yes | <<RFC4880>>
 | 3  | Symmetric-Key Encrypted Session Key Packet           | Yes | Yes | <<RFC4880>>

@@ -8,7 +8,7 @@ The registry:
 * Contain the columns "Flag", "Description", "Security Recommended",
 "Interoperability Recommended", Reference"
 
-* Registry policy is **Specification Required**.
+* Registry policy is *Specification Required*.
 
 * Its "Reference" should refer to <<RFC4880>> and this document.
 
@@ -18,12 +18,12 @@ Add the following note:
 This is a variable-length bit field.
 
 Note: Experts are to verify that the proposed registration
-**SHOULD** provide notable benefits for the wider OpenPGP community,
+*SHOULD* provide notable benefits for the wider OpenPGP community,
 and provides a publicly-available standard that can be implemented in
 an interoperable way.
 ----
 
-The registry **SHOULD** be initialized to the following values:
+The registry *SHOULD* be initialized to the following values:
 
 |===
 | Octet Ordinal | Flag | Description | REC-S | REC-I | Reference
