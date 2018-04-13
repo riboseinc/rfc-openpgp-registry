@@ -1,6 +1,6 @@
 = IANA Registry Updates for OpenPGP
 :doctype: internet-draft
-:name: draft-openpgp-iana-registry-updates-00
+:name: draft-openpgp-iana-registry-updates-01
 :abbrev: OpenPGP IANA Registry Updates
 :updates: 4880
 :status: info
@@ -9,7 +9,7 @@
 :area: sec
 :intended-series: full-standard
 :workgroup: Security Area Advisory Group
-:revdate: 2018-01-06T00:00:00Z
+:revdate: 2018-04-13T00:00:00Z
 :rfc2629xslt: true
 :fullname: Ronald Henry Tse
 :lastname: Tse
@@ -21,7 +21,10 @@
 :country: Hong Kong
 :uri: https://www.ribose.com
 :email: ronald.tse@ribose.com
-//:bibliography-database: my_database.bib
+:fullname_2: Werner Koch
+:lastname_2: Koch
+:forename_initials_2: W.
+:email_2: wk@gnupg.org
 
 include::sections/00-abstract.adoc[leveloffset=+1]
 
@@ -39,4 +42,3 @@ include::sections/96-iana.adoc[leveloffset=+1]
 
 include::sections/99-acknowledgements.adoc[leveloffset=+1]
 include::sections/98-references.adoc[leveloffset=+1]
-
