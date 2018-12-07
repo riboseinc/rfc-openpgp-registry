@@ -1,0 +1,2901 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head profile="http://www.w3.org/2006/03/hcard http://dublincore.org/documents/2008/08/04/dc-html/">
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+
+  <title>IANA Registry Updates for OpenPGP</title>
+
+  <style type="text/css" title="Xml2Rfc (sans serif)">
+  /*<![CDATA[*/
+	  a {
+	  text-decoration: none;
+	  }
+      /* info code from SantaKlauss at http://www.madaboutstyle.com/tooltip2.html */
+      a.info {
+          /* This is the key. */
+          position: relative;
+          z-index: 24;
+          text-decoration: none;
+      }
+      a.info:hover {
+          z-index: 25;
+          color: #FFF; background-color: #900;
+      }
+      a.info span { display: none; }
+      a.info:hover span.info {
+          /* The span will display just on :hover state. */
+          display: block;
+          position: absolute;
+          font-size: smaller;
+          top: 2em; left: -5em; width: 15em;
+          padding: 2px; border: 1px solid #333;
+          color: #900; background-color: #EEE;
+          text-align: left;
+      }
+	  a.smpl {
+	  color: black;
+	  }
+	  a:hover {
+	  text-decoration: underline;
+	  }
+	  a:active {
+	  text-decoration: underline;
+	  }
+	  address {
+	  margin-top: 1em;
+	  margin-left: 2em;
+	  font-style: normal;
+	  }
+	  body {
+	  color: black;
+	  font-family: verdana, helvetica, arial, sans-serif;
+	  font-size: 10pt;
+	  max-width: 55em;
+	  
+	  }
+	  cite {
+	  font-style: normal;
+	  }
+	  dd {
+	  margin-right: 2em;
+	  }
+	  dl {
+	  margin-left: 2em;
+	  }
+	
+	  ul.empty {
+	  list-style-type: none;
+	  }
+	  ul.empty li {
+	  margin-top: .5em;
+	  }
+	  dl p {
+	  margin-left: 0em;
+	  }
+	  dt {
+	  margin-top: .5em;
+	  }
+	  h1 {
+	  font-size: 14pt;
+	  line-height: 21pt;
+	  page-break-after: avoid;
+	  }
+	  h1.np {
+	  page-break-before: always;
+	  }
+	  h1 a {
+	  color: #333333;
+	  }
+	  h2 {
+	  font-size: 12pt;
+	  line-height: 15pt;
+	  page-break-after: avoid;
+	  }
+	  h3, h4, h5, h6 {
+	  font-size: 10pt;
+	  page-break-after: avoid;
+	  }
+	  h2 a, h3 a, h4 a, h5 a, h6 a {
+	  color: black;
+	  }
+	  img {
+	  margin-left: 3em;
+	  }
+	  li {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  ol {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  ol p {
+	  margin-left: 0em;
+	  }
+	  p {
+	  margin-left: 2em;
+	  margin-right: 2em;
+	  }
+	  pre {
+	  margin-left: 3em;
+	  background-color: lightyellow;
+	  padding: .25em;
+	  }
+	  pre.text2 {
+	  border-style: dotted;
+	  border-width: 1px;
+	  background-color: #f0f0f0;
+	  width: 69em;
+	  }
+	  pre.inline {
+	  background-color: white;
+	  padding: 0em;
+	  }
+	  pre.text {
+	  border-style: dotted;
+	  border-width: 1px;
+	  background-color: #f8f8f8;
+	  width: 69em;
+	  }
+	  pre.drawing {
+	  border-style: solid;
+	  border-width: 1px;
+	  background-color: #f8f8f8;
+	  padding: 2em;
+	  }
+	  table {
+	  margin-left: 2em;
+	  }
+	  table.tt {
+	  vertical-align: top;
+	  }
+	  table.full {
+	  border-style: outset;
+	  border-width: 1px;
+	  }
+	  table.headers {
+	  border-style: outset;
+	  border-width: 1px;
+	  }
+	  table.tt td {
+	  vertical-align: top;
+	  }
+	  table.full td {
+	  border-style: inset;
+	  border-width: 1px;
+	  }
+	  table.tt th {
+	  vertical-align: top;
+	  }
+	  table.full th {
+	  border-style: inset;
+	  border-width: 1px;
+	  }
+	  table.headers th {
+	  border-style: none none inset none;
+	  border-width: 1px;
+	  }
+	  table.left {
+	  margin-right: auto;
+	  }
+	  table.right {
+	  margin-left: auto;
+	  }
+	  table.center {
+	  margin-left: auto;
+	  margin-right: auto;
+	  }
+	  caption {
+	  caption-side: bottom;
+	  font-weight: bold;
+	  font-size: 9pt;
+	  margin-top: .5em;
+	  }
+	
+	  table.header {
+	  border-spacing: 1px;
+	  width: 95%;
+	  font-size: 10pt;
+	  color: white;
+	  }
+	  td.top {
+	  vertical-align: top;
+	  }
+	  td.topnowrap {
+	  vertical-align: top;
+	  white-space: nowrap; 
+	  }
+	  table.header td {
+	  background-color: gray;
+	  width: 50%;
+	  }
+	  table.header a {
+	  color: white;
+	  }
+	  td.reference {
+	  vertical-align: top;
+	  white-space: nowrap;
+	  padding-right: 1em;
+	  }
+	  thead {
+	  display:table-header-group;
+	  }
+	  ul.toc, ul.toc ul {
+	  list-style: none;
+	  margin-left: 1.5em;
+	  margin-right: 0em;
+	  padding-left: 0em;
+	  }
+	  ul.toc li {
+	  line-height: 150%;
+	  font-weight: bold;
+	  font-size: 10pt;
+	  margin-left: 0em;
+	  margin-right: 0em;
+	  }
+	  ul.toc li li {
+	  line-height: normal;
+	  font-weight: normal;
+	  font-size: 9pt;
+	  margin-left: 0em;
+	  margin-right: 0em;
+	  }
+	  li.excluded {
+	  font-size: 0pt;
+	  }
+	  ul p {
+	  margin-left: 0em;
+	  }
+	
+	  .comment {
+	  background-color: yellow;
+	  }
+	  .center {
+	  text-align: center;
+	  }
+	  .error {
+	  color: red;
+	  font-style: italic;
+	  font-weight: bold;
+	  }
+	  .figure {
+	  font-weight: bold;
+	  text-align: center;
+	  font-size: 9pt;
+	  }
+	  .filename {
+	  color: #333333;
+	  font-weight: bold;
+	  font-size: 12pt;
+	  line-height: 21pt;
+	  text-align: center;
+	  }
+	  .fn {
+	  font-weight: bold;
+	  }
+	  .hidden {
+	  display: none;
+	  }
+	  .left {
+	  text-align: left;
+	  }
+	  .right {
+	  text-align: right;
+	  }
+	  .title {
+	  color: #990000;
+	  font-size: 18pt;
+	  line-height: 18pt;
+	  font-weight: bold;
+	  text-align: center;
+	  margin-top: 36pt;
+	  }
+	  .vcardline {
+	  display: block;
+	  }
+	  .warning {
+	  font-size: 14pt;
+	  background-color: yellow;
+	  }
+	
+	
+	  @media print {
+	  .noprint {
+		display: none;
+	  }
+	
+	  a {
+		color: black;
+		text-decoration: none;
+	  }
+	
+	  table.header {
+		width: 90%;
+	  }
+	
+	  td.header {
+		width: 50%;
+		color: black;
+		background-color: white;
+		vertical-align: top;
+		font-size: 12pt;
+	  }
+	
+	  ul.toc a::after {
+		content: leader('.') target-counter(attr(href), page);
+	  }
+	
+	  ul.ind li li a {
+		content: target-counter(attr(href), page);
+	  }
+	
+	  .print2col {
+		column-count: 2;
+		-moz-column-count: 2;
+		column-fill: auto;
+	  }
+	  }
+	
+	  @page {
+	  @top-left {
+		   content: "Internet-Draft"; 
+	  } 
+	  @top-right {
+		   content: "December 2010"; 
+	  } 
+	  @top-center {
+		   content: "Abbreviated Title";
+	  } 
+	  @bottom-left {
+		   content: "Doe"; 
+	  } 
+	  @bottom-center {
+		   content: "Expires June 2011"; 
+	  } 
+	  @bottom-right {
+		   content: "[Page " counter(page) "]"; 
+	  } 
+	  }
+	
+	  @page:first { 
+		@top-left {
+		  content: normal;
+		}
+		@top-right {
+		  content: normal;
+		}
+		@top-center {
+		  content: normal;
+		}
+	  }
+  /*]]>*/
+  </style>
+
+  <link href="#rfc.toc" rel="Contents">
+<link href="#rfc.section.1" rel="Chapter" title="1 Introduction">
+<link href="#rfc.section.2" rel="Chapter" title="2 Terms and Definitions">
+<link href="#rfc.section.3" rel="Chapter" title="3 Alignment Amongst OpenPGP Registries">
+<link href="#rfc.section.3.1" rel="Chapter" title="3.1 Policy Conventions Given In RFC 8126">
+<link href="#rfc.section.3.2" rel="Chapter" title="3.2 Registry Naming">
+<link href="#rfc.section.4" rel="Chapter" title='4 Providing Recommendations Via The "Recommended" Column'>
+<link href="#rfc.section.4.1" rel="Chapter" title="4.1 Security Recommendations">
+<link href="#rfc.section.4.1.1" rel="Chapter" title="4.1.1 Weakening Of Cryptographic Algorithms And Parameters">
+<link href="#rfc.section.4.2" rel="Chapter" title="4.2 Interoperability Recommendations">
+<link href="#rfc.section.4.3" rel="Chapter" title="4.3 No Recommendation">
+<link href="#rfc.section.5" rel="Chapter" title="5 IANA OpenPGP Registries">
+<link href="#rfc.section.5.1" rel="Chapter" title="5.1 PGP String-to-Key (S2K) Registry">
+<link href="#rfc.section.5.2" rel="Chapter" title="5.2 PGP Packet Types/Tags Registry">
+<link href="#rfc.section.5.3" rel="Chapter" title="5.3 PGP User Attribute Types Registry">
+<link href="#rfc.section.5.4" rel="Chapter" title="5.4 Image Format Subpacket Types Registry">
+<link href="#rfc.section.5.5" rel="Chapter" title="5.5 Signature Subpacket Types Registry">
+<link href="#rfc.section.5.6" rel="Chapter" title="5.6 Signature Notation Data Subpacket Notation Types Registry">
+<link href="#rfc.section.5.7" rel="Chapter" title="5.7 Key Server Preference Extensions Registry">
+<link href="#rfc.section.5.8" rel="Chapter" title="5.8 Reason for Revocation Extensions Registry">
+<link href="#rfc.section.5.9" rel="Chapter" title="5.9 Implementation Features Registry">
+<link href="#rfc.section.5.10" rel="Chapter" title="5.10 New Packet Versions Registry">
+<link href="#rfc.section.5.11" rel="Chapter" title="5.11 Key Flags Extensions Registry">
+<link href="#rfc.section.5.12" rel="Chapter" title="5.12 Public Key Algorithms Registry">
+<link href="#rfc.section.5.13" rel="Chapter" title="5.13 Symmetric Key Algorithms Registry">
+<link href="#rfc.section.5.14" rel="Chapter" title="5.14 Hash Algorithms Registry">
+<link href="#rfc.section.5.15" rel="Chapter" title="5.15 Compression Algorithms Registry">
+<link href="#rfc.section.5.16" rel="Chapter" title="5.16 New Registry: OpenPGP Signature Notation Data Subpacket Notation Flags Registry">
+<link href="#rfc.section.6" rel="Chapter" title='6 Registries With The "Specification Required" Policy'>
+<link href="#rfc.section.6.1" rel="Chapter" title="6.1 Registration Request Procedure">
+<link href="#rfc.section.6.2" rel="Chapter" title="6.2 Registration Request Outcome">
+<link href="#rfc.section.6.3" rel="Chapter" title="6.3 Temporary Registrations">
+<link href="#rfc.section.7" rel="Chapter" title="7 Designated Experts">
+<link href="#rfc.section.7.1" rel="Chapter" title="7.1 IANA Registration">
+<link href="#rfc.section.7.2" rel="Chapter" title="7.2 Eligibility Criteria">
+<link href="#rfc.section.7.3" rel="Chapter" title="7.3 Selection Criteria And Pool">
+<link href="#rfc.section.7.4" rel="Chapter" title="7.4 Designated Expert Review">
+<link href="#rfc.section.7.4.1" rel="Chapter" title="7.4.1 Review Procedure">
+<link href="#rfc.section.7.4.2" rel="Chapter" title="7.4.2 Review Criteria">
+<link href="#rfc.section.7.5" rel="Chapter" title="7.5 Review Outcomes">
+<link href="#rfc.section.7.6" rel="Chapter" title="7.6 Review Appeals">
+<link href="#rfc.section.8" rel="Chapter" title="8 Security Considerations">
+<link href="#rfc.section.9" rel="Chapter" title="9 IANA Considerations">
+<link href="#rfc.section.10" rel="Chapter" title="10 Acknowledgements">
+<link href="#rfc.references" rel="Chapter" title="11 References">
+<link href="#rfc.references.1" rel="Chapter" title="11.1 Normative References">
+<link href="#rfc.references.2" rel="Chapter" title="11.2 Informative References">
+<link href="#rfc.authors" rel="Chapter">
+
+
+  <meta name="generator" content="xml2rfc version 2.15.3 - https://tools.ietf.org/tools/xml2rfc" />
+  <link rel="schema.dct" href="http://purl.org/dc/terms/" />
+
+  <meta name="dct.creator" content="Tse, R., Koch, W., and D. Atkins" />
+  <meta name="dct.identifier" content="urn:ietf:id:draft-openpgp-iana-registry-updates-02" />
+  <meta name="dct.issued" scheme="ISO8601" content="2018-12-07" />
+  <meta name="dct.abstract" content="This document describes a number of changes to the OpenPGP (RFC 4880) IANA registries that range from adding notes to the registry to changing registration policies.  These changes were motivated by recently proposed extensions to OpenPGP.  Existing IANA OpenPGP registry policies are defined by RFC 4880." />
+  <meta name="description" content="This document describes a number of changes to the OpenPGP (RFC 4880) IANA registries that range from adding notes to the registry to changing registration policies.  These changes were motivated by recently proposed extensions to OpenPGP.  Existing IANA OpenPGP registry policies are defined by RFC 4880." />
+
+</head>
+
+<body>
+
+  <table class="header">
+    <tbody>
+    
+    	<tr>
+<td class="left">Security Area Advisory Group</td>
+<td class="right">R. Tse</td>
+</tr>
+<tr>
+<td class="left">Internet-Draft</td>
+<td class="right">Ribose</td>
+</tr>
+<tr>
+<td class="left">Updates: 4880 (if approved)</td>
+<td class="right">W. Koch</td>
+</tr>
+<tr>
+<td class="left">Intended status: Informational</td>
+<td class="right">GnuPG e.V.</td>
+</tr>
+<tr>
+<td class="left">Expires: June 10, 2019</td>
+<td class="right">D. Atkins</td>
+</tr>
+<tr>
+<td class="left"></td>
+<td class="right">IHTFP Consulting</td>
+</tr>
+<tr>
+<td class="left"></td>
+<td class="right">December 7, 2018</td>
+</tr>
+
+    	
+    </tbody>
+  </table>
+
+  <p class="title">IANA Registry Updates for OpenPGP<br />
+  <span class="filename">draft-openpgp-iana-registry-updates-02</span></p>
+  
+  <h1 id="rfc.abstract"><a href="#rfc.abstract">Abstract</a></h1>
+<p>This document describes a number of changes to the OpenPGP (RFC 4880) IANA registries that range from adding notes to the registry to changing registration policies.  These changes were motivated by recently proposed extensions to OpenPGP.  Existing IANA OpenPGP registry policies are defined by RFC 4880.</p>
+<h1 id="rfc.status"><a href="#rfc.status">Status of This Memo</a></h1>
+<p>This Internet-Draft is submitted in full conformance with the provisions of BCP 78 and BCP 79.</p>
+<p>Internet-Drafts are working documents of the Internet Engineering Task Force (IETF).  Note that other groups may also distribute working documents as Internet-Drafts.  The list of current Internet-Drafts is at https://datatracker.ietf.org/drafts/current/.</p>
+<p>Internet-Drafts are draft documents valid for a maximum of six months and may be updated, replaced, or obsoleted by other documents at any time.  It is inappropriate to use Internet-Drafts as reference material or to cite them other than as "work in progress."</p>
+<p>This Internet-Draft will expire on June 10, 2019.</p>
+<h1 id="rfc.copyrightnotice"><a href="#rfc.copyrightnotice">Copyright Notice</a></h1>
+<p>Copyright (c) 2018 IETF Trust and the persons identified as the document authors.  All rights reserved.</p>
+<p>This document is subject to BCP 78 and the IETF Trust's Legal Provisions Relating to IETF Documents (https://trustee.ietf.org/license-info) in effect on the date of publication of this document.  Please review these documents carefully, as they describe your rights and restrictions with respect to this document.  Code Components extracted from this document must include Simplified BSD License text as described in Section 4.e of the Trust Legal Provisions and are provided without warranty as described in the Simplified BSD License.</p>
+
+  
+  <hr class="noprint" />
+  <h1 class="np" id="rfc.toc"><a href="#rfc.toc">Table of Contents</a></h1>
+  <ul class="toc">
+
+  	<li>1.   <a href="#rfc.section.1">Introduction</a>
+</li>
+<li>2.   <a href="#rfc.section.2">Terms and Definitions</a>
+</li>
+<li>3.   <a href="#rfc.section.3">Alignment Amongst OpenPGP Registries</a>
+</li>
+<ul><li>3.1.   <a href="#rfc.section.3.1">Policy Conventions Given In RFC 8126</a>
+</li>
+<li>3.2.   <a href="#rfc.section.3.2">Registry Naming</a>
+</li>
+</ul><li>4.   <a href="#rfc.section.4">Providing Recommendations Via The "Recommended" Column</a>
+</li>
+<ul><li>4.1.   <a href="#rfc.section.4.1">Security Recommendations</a>
+</li>
+<ul><li>4.1.1.   <a href="#rfc.section.4.1.1">Weakening Of Cryptographic Algorithms And Parameters</a>
+</li>
+</ul><li>4.2.   <a href="#rfc.section.4.2">Interoperability Recommendations</a>
+</li>
+<li>4.3.   <a href="#rfc.section.4.3">No Recommendation</a>
+</li>
+</ul><li>5.   <a href="#rfc.section.5">IANA OpenPGP Registries</a>
+</li>
+<ul><li>5.1.   <a href="#rfc.section.5.1">PGP String-to-Key (S2K) Registry</a>
+</li>
+<li>5.2.   <a href="#rfc.section.5.2">PGP Packet Types/Tags Registry</a>
+</li>
+<li>5.3.   <a href="#rfc.section.5.3">PGP User Attribute Types Registry</a>
+</li>
+<li>5.4.   <a href="#rfc.section.5.4">Image Format Subpacket Types Registry</a>
+</li>
+<li>5.5.   <a href="#rfc.section.5.5">Signature Subpacket Types Registry</a>
+</li>
+<li>5.6.   <a href="#rfc.section.5.6">Signature Notation Data Subpacket Notation Types Registry</a>
+</li>
+<li>5.7.   <a href="#rfc.section.5.7">Key Server Preference Extensions Registry</a>
+</li>
+<li>5.8.   <a href="#rfc.section.5.8">Reason for Revocation Extensions Registry</a>
+</li>
+<li>5.9.   <a href="#rfc.section.5.9">Implementation Features Registry</a>
+</li>
+<li>5.10.   <a href="#rfc.section.5.10">New Packet Versions Registry</a>
+</li>
+<li>5.11.   <a href="#rfc.section.5.11">Key Flags Extensions Registry</a>
+</li>
+<li>5.12.   <a href="#rfc.section.5.12">Public Key Algorithms Registry</a>
+</li>
+<li>5.13.   <a href="#rfc.section.5.13">Symmetric Key Algorithms Registry</a>
+</li>
+<li>5.14.   <a href="#rfc.section.5.14">Hash Algorithms Registry</a>
+</li>
+<li>5.15.   <a href="#rfc.section.5.15">Compression Algorithms Registry</a>
+</li>
+<li>5.16.   <a href="#rfc.section.5.16">New Registry: OpenPGP Signature Notation Data Subpacket Notation Flags Registry</a>
+</li>
+</ul><li>6.   <a href="#rfc.section.6">Registries With The "Specification Required" Policy</a>
+</li>
+<ul><li>6.1.   <a href="#rfc.section.6.1">Registration Request Procedure</a>
+</li>
+<li>6.2.   <a href="#rfc.section.6.2">Registration Request Outcome</a>
+</li>
+<li>6.3.   <a href="#rfc.section.6.3">Temporary Registrations</a>
+</li>
+</ul><li>7.   <a href="#rfc.section.7">Designated Experts</a>
+</li>
+<ul><li>7.1.   <a href="#rfc.section.7.1">IANA Registration</a>
+</li>
+<li>7.2.   <a href="#rfc.section.7.2">Eligibility Criteria</a>
+</li>
+<li>7.3.   <a href="#rfc.section.7.3">Selection Criteria And Pool</a>
+</li>
+<li>7.4.   <a href="#rfc.section.7.4">Designated Expert Review</a>
+</li>
+<ul><li>7.4.1.   <a href="#rfc.section.7.4.1">Review Procedure</a>
+</li>
+<li>7.4.2.   <a href="#rfc.section.7.4.2">Review Criteria</a>
+</li>
+</ul><li>7.5.   <a href="#rfc.section.7.5">Review Outcomes</a>
+</li>
+<li>7.6.   <a href="#rfc.section.7.6">Review Appeals</a>
+</li>
+</ul><li>8.   <a href="#rfc.section.8">Security Considerations</a>
+</li>
+<li>9.   <a href="#rfc.section.9">IANA Considerations</a>
+</li>
+<li>10.   <a href="#rfc.section.10">Acknowledgements</a>
+</li>
+<li>11.   <a href="#rfc.references">References</a>
+</li>
+<ul><li>11.1.   <a href="#rfc.references.1">Normative References</a>
+</li>
+<li>11.2.   <a href="#rfc.references.2">Informative References</a>
+</li>
+</ul><li><a href="#rfc.authors">Authors' Addresses</a>
+</li>
+
+
+  </ul>
+
+  <h1 id="rfc.section.1">
+<a href="#rfc.section.1">1.</a> <a href="#_introduction" id="_introduction">Introduction</a>
+</h1>
+<p id="rfc.section.1.p.1">This document instructs IANA to make changes to a number of OpenPGP-related IANA registries <a href="#RFC4880" class="xref">[RFC4880]</a>. These changes were motivated by recently proposed extensions to OpenPGP.</p>
+<p id="rfc.section.1.p.2">Modelled after <a href="#RFC8447" class="xref">[RFC8447]</a>, the document performs a similar function in modifying existing IANA registry policies for OpenPGP <a href="#RFC4880" class="xref">[RFC4880]</a>.</p>
+<p id="rfc.section.1.p.3">The changes introduced by this document are intended to be comprehensive, proposed after a thorough review of existing registry policy and values.  Changes include updating of registry policy, filling in missing values, providing recommendation of registered items and general housekeeping.</p>
+<p id="rfc.section.1.p.4">The document lists out each OpenPGP registry individually and provides the rationale for changes and the required changes themselves.</p>
+<p id="rfc.section.1.p.5">Specifically, the following changes are pursued:</p>
+<p></p>
+
+<ul>
+<li>Alignment of registry policies with <a href="#RFC8126" class="xref">[RFC8126]</a>;</li>
+<li>Consistency of existing OpenPGP registries, for example, some registries have the prefix "PGP" while some others don&#8217;t;</li>
+<li>Missing values in registries while having been defined in &lt;&lt;RFC4880&gt;;</li>
+<li>Creating a missed registry defined in <a href="#RFC4880" class="xref">[RFC4880]</a>, namely the "OpenPGP Signature Notation Data Subpacket Flags" registry;</li>
+<li>A number of references in the registries point to documents that detail a certain algorithm, but should refer to a document (and the relevant section if appropriate) that details the implementation requirements of that algorithm within the context of OpenPGP.</li>
+</ul>
+
+<p> </p>
+<h1 id="rfc.section.2">
+<a href="#rfc.section.2">2.</a> <a href="#_terms_and_definitions" id="_terms_and_definitions">Terms and Definitions</a>
+</h1>
+<p id="rfc.section.2.p.1">The key words "<strong>MUST</strong>", "<strong>MUST NOT</strong>", "<strong>REQUIRED</strong>", "<strong>SHALL</strong>", "<strong>SHALL NOT</strong>", "<strong>SHOULD</strong>", "<strong>SHOULD NOT</strong>", "<strong>RECOMMENDED</strong>", "<strong>NOT RECOMMENDED</strong>", "<strong>MAY</strong>", and "<strong>OPTIONAL</strong>" in this document are to be interpreted as described in BCP 14 <a href="#RFC2119" class="xref">[RFC2119]</a> <a href="#RFC8174" class="xref">[RFC8174]</a> when, and only when, they appear in all capitals, as shown here.</p>
+<p id="rfc.section.2.p.2">The key words "<strong>Private Use</strong>", "<strong>Experimental Use</strong>", "<strong>Hierarchical Allocation</strong>", "<strong>First Come First Served</strong>", "<strong>Expert Review</strong>", "<strong>Specification Required</strong>", "<strong>RFC Required</strong>", "<strong>IETF Review</strong>", "<strong>Standards Action</strong>" and "<strong>IESG Approval</strong>" in this document are to be interpreted as described in Section 4 of <a href="#RFC8126" class="xref">[RFC8126]</a>.</p>
+<h1 id="rfc.section.3">
+<a href="#rfc.section.3">3.</a> <a href="#_alignment_amongst_openpgp_registries" id="_alignment_amongst_openpgp_registries">Alignment Amongst OpenPGP Registries</a>
+</h1>
+<h1 id="rfc.section.3.1">
+<a href="#rfc.section.3.1">3.1.</a> <a href="#_policy_conventions_given_in_rfc_8126" id="_policy_conventions_given_in_rfc_8126">Policy Conventions Given In RFC 8126</a>
+</h1>
+<p id="rfc.section.3.1.p.1">The OpenPGP IANA registries and their policies defined in <a href="#RFC4880" class="xref">[RFC4880]</a> pre-date <a href="#RFC8126" class="xref">[RFC8126]</a> which defined the term "IETF Review" instead of the now-outdated term "IETF Consensus" <a href="#RFC2434" class="xref">[RFC2434]</a>.</p>
+<p id="rfc.section.3.1.p.2">This draft updates policies of the OpenPGP IANA registries to align with the terms specified in <a href="#RFC8126" class="xref">[RFC8126]</a>.</p>
+<h1 id="rfc.section.3.2">
+<a href="#rfc.section.3.2">3.2.</a> <a href="#_registry_naming" id="_registry_naming">Registry Naming</a>
+</h1>
+<p id="rfc.section.3.2.p.1">Registry names of IANA OpenPGP registries <strong>SHOULD</strong> be consistent.</p>
+<p id="rfc.section.3.2.p.2">The following registries originally have the "PGP" prefix, and the prefix <strong>SHOULD</strong> be changed to "OpenPGP":</p>
+<p></p>
+
+<ul>
+<li>PGP String-to-Key (S2K) Registry (<a href="#registry-s2k" class="xref">Section 5.1</a>)</li>
+<li>PGP Packet Types/Tags Registry (<a href="#registry-packets" class="xref">Section 5.2</a>)</li>
+<li>PGP User Attribute Types Registry (<a href="#registry-useratt" class="xref">Section 5.3</a>)</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.3.2.p.4">The prefix "OpenPGP" <strong>SHOULD</strong> be added to the following registries:</p>
+<p></p>
+
+<ul>
+<li>Image Format Subpacket Types Registry (<a href="#registry-image" class="xref">Section 5.4</a>)</li>
+<li>Signature Subpacket Types Registry (<a href="#registry-signature" class="xref">Section 5.5</a>)</li>
+<li>Signature Notation Data Subpacket Notation Types Registry (<a href="#registry-signature" class="xref">Section 5.5</a>)</li>
+<li>Key Server Preference Extensions Registry (<a href="#registry-keyserver" class="xref">Section 5.7</a>)</li>
+<li>Reason for Revocation Extensions Registry (<a href="#registry-revocation" class="xref">Section 5.8</a>)</li>
+<li>Implementation Features Registry (<a href="#registry-features" class="xref">Section 5.9</a>)</li>
+<li>New Packet Versions Registry (<a href="#registry-packet-versions" class="xref">Section 5.10</a>)</li>
+<li>Public Key Algorithms Registry (<a href="#registry-alg-pub" class="xref">Section 5.12</a>)</li>
+<li>Symmetric Key Algorithms Registry (<a href="#registry-alg-sym" class="xref">Section 5.13</a>)</li>
+<li>Hash Algorithms Registry (<a href="#registry-alg-hash" class="xref">Section 5.14</a>)</li>
+<li>Compression Algorithms Registry (<a href="#registry-alg-comp" class="xref">Section 5.15</a>)</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.3.2.p.6">This renaming is not necessary for the "OpenPGP Signature Notation Data Subpacket Notation Flags Registry" (<a href="#registry-signotion-data" class="xref">Section 5.16</a>) since it is newly created according to this convention.</p>
+<p id="rfc.section.3.2.p.7">For specific recommendations, please see the corresponding sections in <a href="#registries" class="xref">Section 5</a>.</p>
+<h1 id="rfc.section.4">
+<a href="#rfc.section.4">4.</a> <a href="#_providing_recommendations_via_the_recommended_column" id="_providing_recommendations_via_the_recommended_column">Providing Recommendations Via The "Recommended" Column</a>
+</h1>
+<p id="rfc.section.4.p.1">The feature set of OpenPGP is an evolving one. In some cases, it has been unclear whether implementation of a certain feature would actually be beneficial for interoperability or create fragmentation of implementations.</p>
+<p id="rfc.section.4.p.2">Moreover, the fast-moving nature of cryptography directly impacts the security of OpenPGP implementations, and an algorithm once considered secure may be subject to cryptanalytic results that advise otherwise.  For example, this has been demonstrated by the widespread obsolescence of SHA-1 <a href="#RFC6194" class="xref">[RFC6194]</a>.</p>
+<p id="rfc.section.4.p.3">It is therefore beneficial for all OpenPGP interested parties that implementers can follow a stable reference on what is considered best practice in OpenPGP implementations.</p>
+<p id="rfc.section.4.p.4">There are two types of recommendations considered here:</p>
+<p></p>
+
+<ul>
+<li>Recommended for security (abbreviated as "REC-S" in this document)</li>
+<li>Recommended for interoperability (abbreviated as "REC-I" in this document)</li>
+</ul>
+
+<p> </p>
+<h1 id="rfc.section.4.1">
+<a href="#rfc.section.4.1">4.1.</a> <a href="#_security_recommendations" id="_security_recommendations">Security Recommendations</a>
+</h1>
+<p id="rfc.section.4.1.p.1">Recommendations for security are usually critical and urgent.</p>
+<p id="rfc.section.4.1.p.2">The following registries shall have the "Security Recommendation" column added:</p>
+<p></p>
+
+<ul>
+<li>PGP String-to-Key (S2K) Registry</li>
+<li>Public Key Algorithms Registry</li>
+<li>Symmetric Key Algorithms Registry</li>
+<li>Hash Algorithms Registry</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.4.1.p.4">The allowed values for this column are:</p>
+<p></p>
+
+<ul>
+<li>Yes: Recommended, this algorithm is considered secure;</li>
+<li>No: Not recommended, this algorithm is considered insecure;</li>
+<li>Empty: No comment, there is no recommendation on this algorithm.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.4.1.p.6">A "Security Recommendation" <strong>MUST</strong> only be accepted through an Expert Review described in <a href="#expert-review" class="xref">Section 7.4</a>.</p>
+<h1 id="rfc.section.4.1.1">
+<a href="#rfc.section.4.1.1">4.1.1.</a> <a href="#_weakening_of_cryptographic_algorithms_and_parameters" id="_weakening_of_cryptographic_algorithms_and_parameters">Weakening Of Cryptographic Algorithms And Parameters</a>
+</h1>
+<p id="rfc.section.4.1.1.p.1">Cryptographic algorithms and parameters will be broken or weakened over time. Blindly implementing cipher suites listed in the registries is not advised.</p>
+<p id="rfc.section.4.1.1.p.2">Implementers and users <strong>SHOULD</strong> check that the cryptographic algorithms listed continue to provide the expected level of security.</p>
+<h1 id="rfc.section.4.2">
+<a href="#rfc.section.4.2">4.2.</a> <a href="#_interoperability_recommendations" id="_interoperability_recommendations">Interoperability Recommendations</a>
+</h1>
+<p id="rfc.section.4.2.p.1">Recommendations for interoperability are generally less urgent but greatly beneficial for the OpenPGP user experience.</p>
+<p id="rfc.section.4.2.p.2">The following registries shall have the "Interoperability Recommendation" column added:</p>
+<p></p>
+
+<ul>
+<li>PGP String-to-Key (S2K) Registry</li>
+<li>PGP Packet Types/Tags Registry</li>
+<li>PGP User Attribute Types Registry</li>
+<li>Image Format Subpacket Types Registry</li>
+<li>Signature Subpacket Types Registry</li>
+<li>Key Server Preference Extensions Registry</li>
+<li>Reason for Revocation Extensions Registry</li>
+<li>Implementation Features Registry</li>
+<li>New Packet Versions Registry</li>
+<li>Key Flags Extensions Registry</li>
+<li>Public Key Algorithms Registry</li>
+<li>Symmetric Key Algorithms Registry</li>
+<li>Hash Algorithms Registry</li>
+<li>Compression Algorithms Registry</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.4.2.p.4">The allowed values for this column are:</p>
+<p></p>
+
+<ul>
+<li>Yes: Recommended, implementation of this feature enhances interoperability for OpenPGP;</li>
+<li>No: Not recommended, implementation of this feature reduces interoperability for OpenPGP;</li>
+<li>Empty: No comment, there is no recommendation on this feature on interoperability.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.4.2.p.6">An "Interoperability Recommendation" <strong>MUST</strong> only be accepted through an Expert Review described in <a href="#expert-review" class="xref">Section 7.4</a>.</p>
+<h1 id="rfc.section.4.3">
+<a href="#rfc.section.4.3">4.3.</a> <a href="#_no_recommendation" id="_no_recommendation">No Recommendation</a>
+</h1>
+<p id="rfc.section.4.3.p.1">An item not marked as "Recommended" does not mean it is "Not Recommended". This could simply be a reflection that this item has not been through Expert Review, has limited applicability, is intended only for specific use cases, or for other reasons.</p>
+<p id="rfc.section.4.3.p.2">Not all newly defined parameters in a Standards Track document need to be marked as "Recommended".</p>
+<h1 id="rfc.section.5">
+<a href="#rfc.section.5">5.</a> <a href="#registries" id="registries">IANA OpenPGP Registries</a>
+</h1>
+<h1 id="rfc.section.5.1">
+<a href="#rfc.section.5.1">5.1.</a> <a href="#registry-s2k" id="registry-s2k">PGP String-to-Key (S2K) Registry</a>
+</h1>
+<p id="rfc.section.5.1.p.1">Proposed changes to the registry:</p>
+<p></p>
+
+<ul>
+<li>Rename the registry to "OpenPGP String-to-Key (S2K) Algorithms"</li>
+<li>Change registry policy to <strong>Specification Required</strong>.</li>
+<li>Update its "Reference" to also refer to this document.</li>
+<li>A Standards Track document is required to register an S2K algorithm with the value "Yes" in any recommendation.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.5.1.p.3">Add the following note:</p>
+<pre>
+Note: Experts are to verify that the proposed registration
+provides a publicly-available standard that can be implemented
+in an interoperable way, with notable benefits for the wider
+OpenPGP community.
+</pre>
+<p id="rfc.section.5.1.p.4">Update the following registrations:</p>
+<table cellpadding="3" cellspacing="0" class="tt full center">
+<thead><tr>
+<th class="left">ID</th>
+<th class="left">S2K Type</th>
+<th class="left">REC-S</th>
+<th class="left">REC-I</th>
+<th class="left">Reference</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">0</td>
+<td class="left">Simple S2K</td>
+<td class="left">No</td>
+<td class="left">Yes</td>
+<td class="left">Section 3.7.1.1 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">Salted S2K</td>
+<td class="left">No</td>
+<td class="left">Yes</td>
+<td class="left">Section 3.7.1.2 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">2</td>
+<td class="left">Reserved</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 3.7.1 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">3</td>
+<td class="left">Iterated and Salted S2K</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 3.7.1.3 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">4-99</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">100-110</td>
+<td class="left">Private or Experimental Use</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 3.7.1 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">111-255</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="rfc.section.5.2">
+<a href="#rfc.section.5.2">5.2.</a> <a href="#registry-packets" id="registry-packets">PGP Packet Types/Tags Registry</a>
+</h1>
+<p id="rfc.section.5.2.p.1">Proposed changes to the registry:</p>
+<p></p>
+
+<ul>
+<li>Rename the registry to "OpenPGP Packet Types"</li>
+<li>Rename the column "Attribute" to "Packet Type"</li>
+<li>Change registry policy to <strong>RFC Required</strong>.</li>
+<li>Update its "Reference" to also refer to this document.</li>
+<li>A Standards Track document is required to register a Packet Type with the value "Yes" in any recommendation.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.5.2.p.3">Add the following note:</p>
+<pre>
+Note: Due to the scarcity of codepoints in this registry,
+experts are to verify that the proposed registration
+*MUST* provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+</pre>
+<p id="rfc.section.5.2.p.4">Update the following registrations:</p>
+<table cellpadding="3" cellspacing="0" class="tt full center">
+<thead><tr>
+<th class="left">Value</th>
+<th class="left">Packet Type</th>
+<th class="left">REC-S</th>
+<th class="left">REC-I</th>
+<th class="left">Reference</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">0</td>
+<td class="left">Reserved - a packet tag <strong>MUST NOT</strong> have this value</td>
+<td class="left">No</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">Public-Key Encrypted Session Key Packet</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">2</td>
+<td class="left">Signature Packet</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">3</td>
+<td class="left">Symmetric-Key Encrypted Session Key Packet</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">4</td>
+<td class="left">One-Pass Signature Packet</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">5</td>
+<td class="left">Secret Key Packet</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">6</td>
+<td class="left">Public Key Packet</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">7</td>
+<td class="left">Secret Subkey Packet</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">8</td>
+<td class="left">Compressed Data Packet</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">9</td>
+<td class="left">Symmetrically Encrypted Data Packet</td>
+<td class="left">No</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">10</td>
+<td class="left">Marker Packet</td>
+<td class="left">No</td>
+<td class="left">No</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">11</td>
+<td class="left">Literal Data Packet</td>
+<td class="left">No</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">12</td>
+<td class="left">Trust Packet</td>
+<td class="left"></td>
+<td class="left">No</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">13</td>
+<td class="left">User ID Packet</td>
+<td class="left"></td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">14</td>
+<td class="left">Public Subkey Packet</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">15-16</td>
+<td class="left">Unknown</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">17</td>
+<td class="left">User Attribute Packet</td>
+<td class="left"></td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">18</td>
+<td class="left">Sym. Encrypted and Integrity Protected Data Packet</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">19</td>
+<td class="left">Modification Detection Code Packet</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">20-59</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">60-63</td>
+<td class="left">Private or Experimental Use</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+</tbody>
+</table>
+<h1 id="rfc.section.5.3">
+<a href="#rfc.section.5.3">5.3.</a> <a href="#registry-useratt" id="registry-useratt">PGP User Attribute Types Registry</a>
+</h1>
+<p id="rfc.section.5.3.p.1">Proposed changes to the registry:</p>
+<p></p>
+
+<ul>
+<li>Rename the registry to "OpenPGP User Attribute Subpacket Types"</li>
+<li>Rename the column "Attribute" to "User Attribute Type"</li>
+<li>Change registry policy to <strong>Specification Required</strong>.</li>
+<li>Update its "Reference" to also refer to this document.</li>
+<li>A Standards Track document is required to register an Attribute Type algorithm with the value "Yes" in any recommendation.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.5.3.p.3">Add the following note:</p>
+<pre>
+Note: Experts are to verify that the proposed registration
+*SHOULD* provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+</pre>
+<p id="rfc.section.5.3.p.4">Update the following registrations:</p>
+<table cellpadding="3" cellspacing="0" class="tt full center">
+<thead><tr>
+<th class="left">Value</th>
+<th class="left">Attribute Type</th>
+<th class="left">REC-I</th>
+<th class="left">Reference</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">0</td>
+<td class="left">Reserved</td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">image</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">2-99</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">100-110</td>
+<td class="left">Private or Experimental Use</td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">111-255</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="rfc.section.5.4">
+<a href="#rfc.section.5.4">5.4.</a> <a href="#registry-image" id="registry-image">Image Format Subpacket Types Registry</a>
+</h1>
+<p id="rfc.section.5.4.p.1">Proposed changes to the registry:</p>
+<p></p>
+
+<ul>
+<li>Rename the registry to "OpenPGP Image Format Subpacket Types"</li>
+<li>Rename the column "Attribute" to "Image Format Type"</li>
+<li>Change registry policy to <strong>Specification Required</strong>.</li>
+<li>Update its "Reference" to also refer to this document.</li>
+<li>A Standards Track document is required to register a Packet Type/Tag with the value "Yes" in any recommendation.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.5.4.p.3">Add the following note:</p>
+<pre>
+Note: Experts are to verify that the proposed registration
+*SHOULD* provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+</pre>
+<p id="rfc.section.5.4.p.4">Update the following registrations:</p>
+<table cellpadding="3" cellspacing="0" class="tt full center">
+<thead><tr>
+<th class="left">Value</th>
+<th class="left">Image Format Type</th>
+<th class="left">REC-I</th>
+<th class="left">Reference</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">0</td>
+<td class="left">Reserved</td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">JPEG</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">2-99</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">100-110</td>
+<td class="left">Private or Experimental Use</td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">111-255</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="rfc.section.5.5">
+<a href="#rfc.section.5.5">5.5.</a> <a href="#registry-signature" id="registry-signature">Signature Subpacket Types Registry</a>
+</h1>
+<p id="rfc.section.5.5.p.1">Proposed changes to the registry:</p>
+<p></p>
+
+<ul>
+<li>Rename the registry to "OpenPGP Signature Subpacket Types".</li>
+<li>Rename the column "Attribute" to "Signature Subpacket Type"</li>
+<li>Change registry policy to <strong>Specification Required</strong>.</li>
+<li>Update its "Reference" to also refer to this document.</li>
+<li>A Standards Track document is required to register a Signature Subpacket Type with the value "Yes" in any recommendation.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.5.5.p.3">Add the following note:</p>
+<pre>
+Note: Experts are to verify that the proposed registration
+*SHOULD* provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+</pre>
+<p id="rfc.section.5.5.p.4">Update the following registrations:</p>
+<table cellpadding="3" cellspacing="0" class="tt full center">
+<thead><tr>
+<th class="left">Value</th>
+<th class="left">Image Format Type</th>
+<th class="left">REC-I</th>
+<th class="left">Reference</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">0-1</td>
+<td class="left">Reserved</td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">2</td>
+<td class="left">Signature Creation Time</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">3</td>
+<td class="left">Signature Expiration Time</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">4</td>
+<td class="left">Exportable Certification</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">5</td>
+<td class="left">Trust Signature</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">6</td>
+<td class="left">Regular Expression</td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">7</td>
+<td class="left">Revocable</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">8</td>
+<td class="left">Reserved</td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">9</td>
+<td class="left">Key Expiration Time</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">11</td>
+<td class="left">Preferred Symmetric Algorithms</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">12</td>
+<td class="left">Revocation Key</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">13-15</td>
+<td class="left">Reserved</td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">16</td>
+<td class="left">Issuer Key ID</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">17-19</td>
+<td class="left">Reserved</td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">20</td>
+<td class="left">Notation Data</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">21</td>
+<td class="left">Preferred Hash Algorithms</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">22</td>
+<td class="left">Preferred Compression Algorithms</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">23</td>
+<td class="left">Key Server Preferences</td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">24</td>
+<td class="left">Preferred Key Server</td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">25</td>
+<td class="left">Primary User ID</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">26</td>
+<td class="left">Policy Uri</td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">27</td>
+<td class="left">Key Flags</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">28</td>
+<td class="left">Signer&#8217;s User ID</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">29</td>
+<td class="left">Reason For Revocation</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">30</td>
+<td class="left">Features</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">31</td>
+<td class="left">Signature Target</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">32</td>
+<td class="left">Embedded Signature</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">33-99</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">100-110</td>
+<td class="left">Private or Experimental Use</td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">111-127</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="rfc.section.5.6">
+<a href="#rfc.section.5.6">5.6.</a> <a href="#registry-signotion" id="registry-signotion">Signature Notation Data Subpacket Notation Types Registry</a>
+</h1>
+<p id="rfc.section.5.6.p.1">This registry is currently empty.</p>
+<p id="rfc.section.5.6.p.2">However, the existing IANA registry contains an erroneous note that the registry is about "User Notations". According to <a href="#RFC4880" class="xref">[RFC4880]</a> which defined this registry, "[n]otations contain a user space that is completely unmanaged". This registry should be for the <a href="#RFC4880" class="xref">[RFC4880]</a> "IETF (name)space".</p>
+<p id="rfc.section.5.6.p.3">Proposed changes to the registry:</p>
+<p></p>
+
+<ul>
+<li>Rename the registry to "OpenPGP Notation Data Subpacket Notation Types".</li>
+<li>Change registry policy to <strong>Specification Required</strong>.</li>
+<li>Update its "Reference" to also refer to this document.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.5.6.p.5">Update its erroneous "Note" that says:</p>
+<pre>
+Notation names are arbitrary strings encoded in UTF-8. They reside two
+name spaces: The IETF name space and the user name space.
+
+The IETF name space is registered with IANA. These names MUST NOT
+contain the "@" character (0x40).  This is a tag for the user name
+space.
+</pre>
+<p id="rfc.section.5.6.p.6">To:</p>
+<pre>
+Notation names are arbitrary strings encoded in UTF-8, and there are
+two namespaces:
+
+* IETF namespace: keys are of any string but *MUST NOT* contain the
+"@" character (0x40). Allowed keys *MUST* by registered in this
+registry.
+
+* User namespace: keys are of form "[name]@[domain]", these are
+unmanaged keys and NOT maintained by this registry.
+
+Note: Experts are to verify that the proposed registration
+is necessary and *SHOULD* provide general benefits for the wider
+OpenPGP community.
+</pre>
+<h1 id="rfc.section.5.7">
+<a href="#rfc.section.5.7">5.7.</a> <a href="#registry-keyserver" id="registry-keyserver">Key Server Preference Extensions Registry</a>
+</h1>
+<p id="rfc.section.5.7.p.1">Proposed changes to the registry:</p>
+<p></p>
+
+<ul>
+<li>Rename the registry to "OpenPGP Key Server Preferences"</li>
+<li>Rename the column "First octet" to "Flag"</li>
+<li>Add a column "Octet Ordinal" to indicate the ordinal of the octet of which the "Flag" field is read from.</li>
+<li>Rename the column "Extension" to "Description"</li>
+<li>Change registry policy to <strong>Specification Required</strong>.</li>
+<li>Update its "Reference" to also refer to this document.</li>
+<li>A Standards Track document is required to register an item with the value "Yes" in any recommendation.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.5.7.p.3">Add the following note:</p>
+<pre>
+This is a variable-length bit field.
+
+Note: Experts are to verify that the proposed registration
+*SHOULD* provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+</pre>
+<p id="rfc.section.5.7.p.4">Update existing registrations:</p>
+<table cellpadding="3" cellspacing="0" class="tt full center">
+<thead><tr>
+<th class="left">Octet Ordinal</th>
+<th class="left">Flag</th>
+<th class="left">Description</th>
+<th class="left">REC-I</th>
+<th class="left">Reference</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">1</td>
+<td class="left">0x01</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x02</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x04</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x08</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x10</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x20</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x40</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x80</td>
+<td class="left">No-Modify</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.3.2.17 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">2-</td>
+<td class="left"></td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="rfc.section.5.8">
+<a href="#rfc.section.5.8">5.8.</a> <a href="#registry-revocation" id="registry-revocation">Reason for Revocation Extensions Registry</a>
+</h1>
+<p id="rfc.section.5.8.p.1">Proposed changes to the registry:</p>
+<p></p>
+
+<ul>
+<li>Rename the registry to "OpenPGP Reasons for Revocation"</li>
+<li>Rename the column "Flag" to "Reason"</li>
+<li>Change registry policy to <strong>Specification Required</strong>.</li>
+<li>Update its "Reference" to also refer to this document.</li>
+<li>A Standards Track document is required to register an item with the value "Yes" in any recommendation.</li>
+<li>Add the following note:</li>
+</ul>
+
+<p> </p>
+<pre>
+Note: Experts are to verify that the proposed registration
+*SHOULD* provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+</pre>
+<p id="rfc.section.5.8.p.3">Update the following registrations:</p>
+<table cellpadding="3" cellspacing="0" class="tt full center">
+<thead><tr>
+<th class="left">Value</th>
+<th class="left">Reason</th>
+<th class="left">REC-I</th>
+<th class="left">Reference</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">0</td>
+<td class="left">No reason specified (key revocations or cert revocations)</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.2.3.23 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">Key is superseded (key revocations)</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.2.3.23 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">2</td>
+<td class="left">Key material has been compromised (key revocations)</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.2.3.23 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">3</td>
+<td class="left">Key is retired and no longer used (key revocations)</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.2.3.23 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">4-31</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left">Section 5.2.3.23 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">32</td>
+<td class="left">User ID information is no longer valid (cert revocations)</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.2.3.23 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">33-99</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">100-110</td>
+<td class="left">Private Use</td>
+<td class="left"></td>
+<td class="left">Section 5.2.3.23 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">111-255</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="rfc.section.5.9">
+<a href="#rfc.section.5.9">5.9.</a> <a href="#registry-features" id="registry-features">Implementation Features Registry</a>
+</h1>
+<p id="rfc.section.5.9.p.1">Proposed changes to the registry:</p>
+<p></p>
+
+<ul>
+<li>Rename the registry to "OpenPGP Features"</li>
+<li>Mark value "First Octet, 0x80" as "Private Use" in the registry.</li>
+<li>Rename the column "Value" to "Flag"</li>
+<li>Add a column "Octet Ordinal" to indicate the ordinal of the octet of which the "Flag" field is read from.</li>
+<li>Change registry policy to <strong>Specification Required</strong>.</li>
+<li>Update its "Reference" to also refer to this document.</li>
+<li>A Standards Track document is required to register an item with the value "Yes" in any recommendation.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.5.9.p.3">Add the following note:</p>
+<pre>
+This is a variable-length bit field.
+
+Note: Experts are to verify that the proposed registration
+*SHOULD* provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+</pre>
+<p id="rfc.section.5.9.p.4">Update the following registrations:</p>
+<table cellpadding="3" cellspacing="0" class="tt full center">
+<thead><tr>
+<th class="left">Octet Ordinal</th>
+<th class="left">Flag</th>
+<th class="left">Feature</th>
+<th class="left">REC-S</th>
+<th class="left">REC-I</th>
+<th class="left">Reference</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">1</td>
+<td class="left">0x01</td>
+<td class="left">Modification Detection (packets 18 and 19)</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.2.3.24 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x02</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x04</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x08</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x10</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x20</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x40</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x80</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">2-</td>
+<td class="left"></td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="rfc.section.5.10">
+<a href="#rfc.section.5.10">5.10.</a> <a href="#registry-packet-versions" id="registry-packet-versions">New Packet Versions Registry</a>
+</h1>
+<p id="rfc.section.5.10.p.1">This registry is currently empty.</p>
+<p id="rfc.section.5.10.p.2">Proposed changes to the registry:</p>
+<pre>
+Note: Experts are to verify that the proposed registration
+*SHOULD* provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+</pre>
+<p></p>
+
+<ul>
+<li>Rename the registry to "OpenPGP Packet Type Versions"</li>
+<li>It should have the following columns: "Packet Type", "Version", "Security Recommended", "Interoperability Recommended", "Reference"</li>
+<li>Change registry policy to <strong>RFC Required</strong>.</li>
+<li>Update its "Reference" to also refer to this document.</li>
+<li>Add the following note:</li>
+<li>A Standards Track document is required to register a Packet Type with the value "Yes" in any recommendation.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.5.10.p.4">Add in the existing (but missing) registrations:</p>
+<table cellpadding="3" cellspacing="0" class="tt full center">
+<thead><tr>
+<th class="left">Packet Type</th>
+<th class="left">Version</th>
+<th class="left">REC-S</th>
+<th class="left">REC-I</th>
+<th class="left">Reference</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">1</td>
+<td class="left">3</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.1 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">2</td>
+<td class="left">3</td>
+<td class="left">No</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.2.2 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">2</td>
+<td class="left">4</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.2.3 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">3</td>
+<td class="left">4</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.3 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">4</td>
+<td class="left">3</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.4 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">5</td>
+<td class="left">3</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.5.1.3 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">5</td>
+<td class="left">4</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.5.1.3 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">6</td>
+<td class="left">3</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.5.1.1 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">6</td>
+<td class="left">4</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.5.1.1 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">7</td>
+<td class="left">3</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.5.1.4 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">7</td>
+<td class="left">4</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.5.1.4 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">14</td>
+<td class="left">3</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.5.1.2 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">14</td>
+<td class="left">4</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.5.1.2 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">18</td>
+<td class="left">1</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.13 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+</tbody>
+</table>
+<h1 id="rfc.section.5.11">
+<a href="#rfc.section.5.11">5.11.</a> <a href="#_key_flags_extensions_registry" id="_key_flags_extensions_registry">Key Flags Extensions Registry</a>
+</h1>
+<p id="rfc.section.5.11.p.1">Proposed changes to the registry:</p>
+<p></p>
+
+<ul>
+<li>Rename the registry to "OpenPGP Key Flags"</li>
+<li>Rename the column "Value" to "Flag"</li>
+<li>Add a column "Octet Ordinal" to indicate the ordinal of the octet of which the "Flag" field is read from.</li>
+<li>Rename the column "Extension" to "Description"</li>
+<li>Mark value "First Octet, 0x40" as "Unassigned" in the registry.</li>
+<li>Remove ending periods for all values in "Description" for consistency with other registries.</li>
+<li>Change registry policy to <strong>Specification Required</strong>.</li>
+<li>Update its "Reference" to also refer to this document.</li>
+<li>A Standards Track document is required to register an item with the value "Yes" in any recommendation.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.5.11.p.3">Add the following note:</p>
+<pre>
+This is a variable-length bit field.
+
+Note: Experts are to verify that the proposed registration
+*SHOULD* provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+</pre>
+<p id="rfc.section.5.11.p.4">Update existing registrations:</p>
+<table cellpadding="3" cellspacing="0" class="tt full center">
+<thead><tr>
+<th class="left">Octet Ordinal</th>
+<th class="left">Flag</th>
+<th class="left">Description</th>
+<th class="left">REC-I</th>
+<th class="left">Reference</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">1</td>
+<td class="left">0x01</td>
+<td class="left">This key may be used to certify other keys</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.2.3.21 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x02</td>
+<td class="left">This key may be used to sign data</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.2.3.21 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x04</td>
+<td class="left">This key may be used to encrypt communications</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.2.3.21 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x08</td>
+<td class="left">This key may be used to encrypt storage</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.2.3.21 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x10</td>
+<td class="left">The private component of this key may have been split by a secret-sharing mechanism</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.2.3.21 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x20</td>
+<td class="left">This key may be used for authentication</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.2.3.21 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x40</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x80</td>
+<td class="left">The private component of this key may be in the possession of more than one person</td>
+<td class="left">Yes</td>
+<td class="left">Section 5.2.3.21 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+</tbody>
+</table>
+<h1 id="rfc.section.5.12">
+<a href="#rfc.section.5.12">5.12.</a> <a href="#registry-alg-pub" id="registry-alg-pub">Public Key Algorithms Registry</a>
+</h1>
+<p id="rfc.section.5.12.p.1">Proposed changes to the registry:</p>
+<p></p>
+
+<ul>
+<li>Rename registry to "OpenPGP Public Key Algorithms".</li>
+<li>Change registry policy to <strong>Specification Required</strong>.</li>
+<li>Update its "Reference" to also refer to this document.</li>
+<li>A Standards Track document is required to register an item with the value "Yes" in any recommendation.</li>
+<li>Existing registrations with a "Reference" value pointing to a non-IETF published document should be checked to see if an IETF-published document is available, and if so, update the reference to point to the IETF-published document instead for consistency.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.5.12.p.3">Add the following note:</p>
+<pre>
+Note: Experts are to verify that the proposed registration
+*SHOULD* provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way. References to IETF-published documents are
+preferred. The "Reference" value should point to a document that
+details the implementation of this algorithm in OpenPGP, not of
+the algorithm itself.
+</pre>
+<p id="rfc.section.5.12.p.4">Update the following registrations:</p>
+<table cellpadding="3" cellspacing="0" class="tt full center">
+<thead><tr>
+<th class="left">ID</th>
+<th class="left">Algorithm</th>
+<th class="left">REC-S</th>
+<th class="left">REC-I</th>
+<th class="left">Reference</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">1</td>
+<td class="left">RSA (Encrypt or Sign)</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 13.5 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">2</td>
+<td class="left">RSA Encrypt-Only</td>
+<td class="left"></td>
+<td class="left">No</td>
+<td class="left">Section 13.5 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">3</td>
+<td class="left">RSA Sign-Only</td>
+<td class="left"></td>
+<td class="left">No</td>
+<td class="left">Section 13.5 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">4-15</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 13.5 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">16</td>
+<td class="left">Elgamal (Encrypt-Only)</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC4880" class="xref">[RFC4880]</a> </td>
+</tr>
+<tr>
+<td class="left">17</td>
+<td class="left">DSA (Digital Signature Algorithm)</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 13.6 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">18</td>
+<td class="left">ECDH public key algorithm</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC6637" class="xref">[RFC6637]</a> </td>
+</tr>
+<tr>
+<td class="left">19</td>
+<td class="left">ECDSA public key algorithm</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">
+<a href="#RFC6637" class="xref">[RFC6637]</a> </td>
+</tr>
+<tr>
+<td class="left">20</td>
+<td class="left">Reserved (formerly Elgamal Encrypt or Sign)</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 9.1 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">21</td>
+<td class="left">Reserved for Diffie-Hellman (X9.42, as defined for IETF-S&#8203;/&#8203;MIME)</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 9.1 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">22-99</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">100-110</td>
+<td class="left">Private or Experimental Use</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 13.5 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">111-255</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="rfc.section.5.13">
+<a href="#rfc.section.5.13">5.13.</a> <a href="#registry-alg-sym" id="registry-alg-sym">Symmetric Key Algorithms Registry</a>
+</h1>
+<p id="rfc.section.5.13.p.1">Proposed changes to the registry:</p>
+<p></p>
+
+<ul>
+<li>Rename registry to "OpenPGP Symmetric Key Algorithms".</li>
+<li>Algorithm descriptions have been simplified and applicable references moved to the "Reference" column.</li>
+<li>All algorithm descriptions with "[n+] bit" is updated to "[n+]-bit" for consistency, for example, the phrase "128 bit key" becomes "128-bit key".</li>
+<li>Change registry policy to <strong>Specification Required</strong>.</li>
+<li>Update its "Reference" to also refer to this document.</li>
+<li>A Standards Track document is required to register an item with the value "Yes" in any recommendation.</li>
+<li>Existing registrations with a "Reference" value pointing to a non-IETF published document should be checked to see if an IETF-published document is available, and if so, update the reference to point to the IETF-published document instead for consistency.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.5.13.p.3">Add the following note:</p>
+<pre>
+Note: Experts are to verify that the proposed registration
+*SHOULD* provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way. References to IETF-published documents are
+preferred. The "Reference" value should point to a document that
+details the implementation of this algorithm in OpenPGP, not of
+the algorithm itself.
+</pre>
+<p id="rfc.section.5.13.p.4">Update the following registrations:</p>
+<table cellpadding="3" cellspacing="0" class="tt full center">
+<thead><tr>
+<th class="left">ID</th>
+<th class="left">Algorithm</th>
+<th class="left">REC-S</th>
+<th class="left">REC-I</th>
+<th class="left">Reference</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">0</td>
+<td class="left">Plaintext</td>
+<td class="left"></td>
+<td class="left">Yes</td>
+<td class="left">Section 13.4 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">IDEA</td>
+<td class="left">No</td>
+<td class="left">No</td>
+<td class="left">Section 6.4.1 of <a href="#RFC1991" class="xref">[RFC1991]</a>
+</td>
+</tr>
+<tr>
+<td class="left">2</td>
+<td class="left">TripleDES (DES-EDE, 168-bit key derived from 192-bit key)</td>
+<td class="left">No</td>
+<td class="left">Yes</td>
+<td class="left">Section 13.2 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">3</td>
+<td class="left">CAST5 (128-bit key)</td>
+<td class="left">No</td>
+<td class="left">Yes</td>
+<td class="left">Section 9.2 of <a href="#RFC4880" class="xref">[RFC4880]</a> <a href="#RFC2144" class="xref">[RFC2144]</a>
+</td>
+</tr>
+<tr>
+<td class="left">4</td>
+<td class="left">Blowfish (128-bit key, 16 rounds)</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 9.2 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">5-6</td>
+<td class="left">Reserved</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 9.1 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">7</td>
+<td class="left">AES with 128-bit key</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 9.2 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">8</td>
+<td class="left">AES with 192-bit key</td>
+<td class="left">Yes</td>
+<td class="left"></td>
+<td class="left">Section 9.2 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">9</td>
+<td class="left">AES with 256-bit key</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 9.2 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">10</td>
+<td class="left">Twofish with 256-bit key</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 9.2 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">11</td>
+<td class="left">Camellia with 128-bit key</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC5581" class="xref">[RFC5581]</a> </td>
+</tr>
+<tr>
+<td class="left">12</td>
+<td class="left">Camellia with 192-bit key</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC5581" class="xref">[RFC5581]</a> </td>
+</tr>
+<tr>
+<td class="left">13</td>
+<td class="left">Camellia with 256-bit key</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">
+<a href="#RFC5581" class="xref">[RFC5581]</a> </td>
+</tr>
+<tr>
+<td class="left">14-99</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">100-110</td>
+<td class="left">Private or Experimental Use</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 9.2 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">111-255</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="rfc.section.5.14">
+<a href="#rfc.section.5.14">5.14.</a> <a href="#registry-alg-hash" id="registry-alg-hash">Hash Algorithms Registry</a>
+</h1>
+<p id="rfc.section.5.14.p.1">Proposed changes to the registry:</p>
+<p></p>
+
+<ul>
+<li>Rename registry to "OpenPGP Hash Key Algorithms".</li>
+<li>Change registry policy to <strong>Specification Required</strong>.</li>
+<li>Update its "Reference" to also refer to this document.</li>
+<li>A Standards Track document is required to register an item with the value "Yes" in any recommendation.</li>
+<li>Existing registrations with a "Reference" value pointing to a non-IETF published document should be checked to see if an IETF-published document is available, and if so, update the reference to point to the IETF-published document instead for consistency.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.5.14.p.3">Add the following note:</p>
+<pre>
+Note: Experts are to verify that the proposed registration
+*SHOULD* provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way. References to IETF-published documents are
+preferred. The "Reference" value should point to a document that
+details the implementation of this algorithm in OpenPGP, not of
+the algorithm itself.
+</pre>
+<p id="rfc.section.5.14.p.4">Update the following registrations:</p>
+<table cellpadding="3" cellspacing="0" class="tt full center">
+<thead><tr>
+<th class="left">ID</th>
+<th class="left">Algorithm</th>
+<th class="left">Text Name</th>
+<th class="left">REC-S</th>
+<th class="left">REC-I</th>
+<th class="left">Reference</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">1</td>
+<td class="left">MD5</td>
+<td class="left">"MD5"</td>
+<td class="left">No</td>
+<td class="left">No</td>
+<td class="left">Section 9.4 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">2</td>
+<td class="left">SHA-1</td>
+<td class="left">"SHA1"</td>
+<td class="left">No</td>
+<td class="left">Yes</td>
+<td class="left">Section 9.4 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">3</td>
+<td class="left">RIPE-MD/160</td>
+<td class="left">"RIPEMD160"</td>
+<td class="left">Yes</td>
+<td class="left"></td>
+<td class="left">Section 9.4 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">4-7</td>
+<td class="left">Reserved</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 9.4 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">8</td>
+<td class="left">SHA256</td>
+<td class="left">"SHA256"</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 9.4 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">9</td>
+<td class="left">SHA384</td>
+<td class="left">"SHA384"</td>
+<td class="left">Yes</td>
+<td class="left"></td>
+<td class="left">Section 9.4 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">10</td>
+<td class="left">SHA512</td>
+<td class="left">"SHA512"</td>
+<td class="left">Yes</td>
+<td class="left">Yes</td>
+<td class="left">Section 9.4 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">11</td>
+<td class="left">SHA224</td>
+<td class="left">"SHA224"</td>
+<td class="left">Yes</td>
+<td class="left"></td>
+<td class="left">Section 9.4 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">12-99</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left"></td>
+<td class="left">100-110</td>
+<td class="left">Private or Experimental Use</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">Section 9.4 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+<td class="left">111-255</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="rfc.section.5.15">
+<a href="#rfc.section.5.15">5.15.</a> <a href="#registry-alg-comp" id="registry-alg-comp">Compression Algorithms Registry</a>
+</h1>
+<p id="rfc.section.5.15.p.1">Proposed changes to the registry:</p>
+<p></p>
+
+<ul>
+<li>Rename registry to "OpenPGP Compression Key Algorithms".</li>
+<li>Change registry policy to <strong>Specification Required</strong>.</li>
+<li>Update its "Reference" to also refer to this document.</li>
+<li>A Standards Track document is required to register an item with the value "Yes" in any recommendation.</li>
+<li>Existing registrations with a "Reference" value pointing to a non-IETF published document should be checked to see if an IETF-published document is available, and if so, update the reference to point to the IETF-published document instead for consistency.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.5.15.p.3">Add the following note:</p>
+<pre>
+Note: Experts are to verify that the proposed registration
+*SHOULD* provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way. References to IETF-published documents are
+preferred.
+</pre>
+<p id="rfc.section.5.15.p.4">Update the following registrations:</p>
+<table cellpadding="3" cellspacing="0" class="tt full center">
+<thead><tr>
+<th class="left">ID</th>
+<th class="left">Algorithm</th>
+<th class="left">REC-I</th>
+<th class="left">Reference</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">0</td>
+<td class="left">Uncompressed</td>
+<td class="left">Yes</td>
+<td class="left">Section 9.3 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">ZIP</td>
+<td class="left">Yes</td>
+<td class="left">Section 9.3 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">2</td>
+<td class="left">ZLIB</td>
+<td class="left">Yes</td>
+<td class="left">Section 9.3 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">3</td>
+<td class="left">BZip2</td>
+<td class="left"></td>
+<td class="left">Section 9.3 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">4-99</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+<tr>
+<td class="left">100-110</td>
+<td class="left">Private or Experimental Use</td>
+<td class="left"></td>
+<td class="left">Section 9.3 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">111-255</td>
+<td class="left">Unassigned</td>
+<td class="left"></td>
+<td class="left"></td>
+</tr>
+</tbody>
+</table>
+<h1 id="rfc.section.5.16">
+<a href="#rfc.section.5.16">5.16.</a> <a href="#registry-signotion-data" id="registry-signotion-data">New Registry: OpenPGP Signature Notation Data Subpacket Notation Flags Registry</a>
+</h1>
+<p id="rfc.section.5.16.p.1">This registry is created in accordance with Section 5.2.3.16 of <a href="#RFC4880" class="xref">[RFC4880]</a>.</p>
+<p id="rfc.section.5.16.p.2">The registry:</p>
+<p></p>
+
+<ul>
+<li>Contain the columns "Flag", "Description", "Security Recommended", "Interoperability Recommended", Reference"</li>
+<li>Registry policy is <strong>Specification Required</strong>.</li>
+<li>Its "Reference" should refer to <a href="#RFC4880" class="xref">[RFC4880]</a> and this document.</li>
+</ul>
+
+<p> </p>
+<p id="rfc.section.5.16.p.4">Add the following note:</p>
+<pre>
+This is a variable-length bit field.
+
+Note: Experts are to verify that the proposed registration
+*SHOULD* provide notable benefits for the wider OpenPGP community,
+and provides a publicly-available standard that can be implemented in
+an interoperable way.
+</pre>
+<p id="rfc.section.5.16.p.5">The registry <strong>SHOULD</strong> be initialized to the following values:</p>
+<table cellpadding="3" cellspacing="0" class="tt full center">
+<thead><tr>
+<th class="left">Octet Ordinal</th>
+<th class="left">Flag</th>
+<th class="left">Description</th>
+<th class="left">REC-S</th>
+<th class="left">REC-I</th>
+<th class="left">Reference</th>
+</tr></thead>
+<tbody>
+<tr>
+<td class="left">1</td>
+<td class="left">0x01</td>
+<td class="left">Unassigned.</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 5.2.3.16 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x02</td>
+<td class="left">Unassigned.</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 5.2.3.16 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x04</td>
+<td class="left">Unassigned.</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 5.2.3.16 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x08</td>
+<td class="left">Unassigned.</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 5.2.3.16 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x10</td>
+<td class="left">Unassigned.</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 5.2.3.16 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x20</td>
+<td class="left">Unassigned.</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 5.2.3.16 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x40</td>
+<td class="left">Unassigned.</td>
+<td class="left"></td>
+<td class="left"></td>
+<td class="left">Section 5.2.3.16 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+<tr>
+<td class="left">1</td>
+<td class="left">0x80</td>
+<td class="left">This note value is human-readable text.</td>
+<td class="left"></td>
+<td class="left">Yes</td>
+<td class="left">Section 5.2.3.16 of <a href="#RFC4880" class="xref">[RFC4880]</a>
+</td>
+</tr>
+</tbody>
+</table>
+<h1 id="rfc.section.6">
+<a href="#rfc.section.6">6.</a> <a href="#registry-spec-reg" id="registry-spec-reg">Registries With The "Specification Required" Policy</a>
+</h1>
+<p id="rfc.section.6.p.1">Registration requests for a <strong>Specification Required</strong> and <strong>Expert Review</strong> registry must be submitted to the Expert Pool (<a href="#expert-pool" class="xref">Section 7</a>) through the openpgp-reg-review@ietf.org mailing list.</p>
+<p id="rfc.section.6.p.2">The registration request will be deemed successful after three approved Expert Reviews (<a href="#expert-review" class="xref">Section 7.4</a>), and the Designated Experts will request IANA to register the proposed registration.</p>
+<h1 id="rfc.section.6.1">
+<a href="#rfc.section.6.1">6.1.</a> <a href="#_registration_request_procedure" id="_registration_request_procedure">Registration Request Procedure</a>
+</h1>
+<p id="rfc.section.6.1.p.1">Registration requests sent to the mailing list for review <strong>SHOULD</strong> use an appropriate subject (e.g., "Registration request: new algorithm in Symmetric Encryption registry").</p>
+<p id="rfc.section.6.1.p.2">Within the review period, the Designated Experts will either approve or deny the registration request, communicating this decision to the review list and IANA.</p>
+<h1 id="rfc.section.6.2">
+<a href="#rfc.section.6.2">6.2.</a> <a href="#_registration_request_outcome" id="_registration_request_outcome">Registration Request Outcome</a>
+</h1>
+<p id="rfc.section.6.2.p.1">An outcome of a registration request is determined by results of Expert Reviews (<a href="#expert-review" class="xref">Section 7.4</a>).</p>
+<p id="rfc.section.6.2.p.2">A registration request is approved once it receives a minimum of three Expert Reviews that result in approval.</p>
+<p id="rfc.section.6.2.p.3">The outcomes of a request review are:</p>
+<p></p>
+
+<ul>
+<li>Approval: once there are three approved Designated Expert reviews within the review period;</li>
+<li>Denial: there have been more than three Designated Expert reviews within the review period but have not met the approval threshold of three approvals.</li>
+</ul>
+
+<p> </p>
+<h1 id="rfc.section.6.3">
+<a href="#rfc.section.6.3">6.3.</a> <a href="#_temporary_registrations" id="_temporary_registrations">Temporary Registrations</a>
+</h1>
+<p id="rfc.section.6.3.p.1">To allow for the allocation of values prior to publication, Designated Experts <strong>MAY</strong> approve a temporary registration once they are satisfied that such a specification will be published.</p>
+<p id="rfc.section.6.3.p.2">This temporary registration has a 1 year validity, of which when expired will be automatically revoked.</p>
+<p id="rfc.section.6.3.p.3">Once the specification that the proposal relies is published within this period, the Designated Experts <strong>SHOULD</strong> request IANA to convert this registration to an official one.</p>
+<h1 id="rfc.section.7">
+<a href="#rfc.section.7">7.</a> <a href="#expert-pool" id="expert-pool">Designated Experts</a>
+</h1>
+<p id="rfc.section.7.p.1">Designated Experts are responsible for performing registration request reviews for <strong>Expert Review</strong> and <strong>Specification Required</strong> IANA OpenPGP registries.</p>
+<h1 id="rfc.section.7.1">
+<a href="#rfc.section.7.1">7.1.</a> <a href="#_iana_registration" id="_iana_registration">IANA Registration</a>
+</h1>
+<p id="rfc.section.7.1.p.1">IANA <strong>MUST</strong> only accept registry updates from the Designated Experts and <strong>SHOULD</strong> direct all requests for registration to the review mailing list.</p>
+<h1 id="rfc.section.7.2">
+<a href="#rfc.section.7.2">7.2.</a> <a href="#_eligibility_criteria" id="_eligibility_criteria">Eligibility Criteria</a>
+</h1>
+<p id="rfc.section.7.2.p.1">A Designated Expert <strong>SHOULD</strong> have a thorough understanding, demonstrated knowledge and experience of OpenPGP <a href="#RFC4880" class="xref">[RFC4880]</a> and its Standards Track extensions.</p>
+<h1 id="rfc.section.7.3">
+<a href="#rfc.section.7.3">7.3.</a> <a href="#_selection_criteria_and_pool" id="_selection_criteria_and_pool">Selection Criteria And Pool</a>
+</h1>
+<p id="rfc.section.7.3.p.1">Designated Experts are judged and selected by the IETF Area Director of which the "openpgp" workgroup belongs.</p>
+<p id="rfc.section.7.3.p.2">The selected pool of Designated Experts <strong>SHOULD</strong> be able to represent the perspectives of different applications using this specification, in order to enable broadly informed review of registration decisions.</p>
+<h1 id="rfc.section.7.4">
+<a href="#rfc.section.7.4">7.4.</a> <a href="#expert-review" id="expert-review">Designated Expert Review</a>
+</h1>
+<h1 id="rfc.section.7.4.1">
+<a href="#rfc.section.7.4.1">7.4.1.</a> <a href="#_review_procedure" id="_review_procedure">Review Procedure</a>
+</h1>
+<p id="rfc.section.7.4.1.p.1">On submission of a review request, five Designated Experts are sought out for the review of the request. These Designated Experts must provide a review decision response within 21 days of submission.</p>
+<p id="rfc.section.7.4.1.p.2">If less than three Designated Experts have performed a review by the end of that period, an extension of 21 days will be granted and extra Designated Experts selected to complete the review.</p>
+<p id="rfc.section.7.4.1.p.3">In cases where a review assignment could be perceived as creating a conflict of interest for a particular Designated Expert, that Designated Expert <strong>SHOULD</strong> defer review responsibility to another Designated Expert, as described in Section 5.2 of <a href="#RFC8126" class="xref">[RFC8126]</a>.</p>
+<h1 id="rfc.section.7.4.2">
+<a href="#rfc.section.7.4.2">7.4.2.</a> <a href="#_review_criteria" id="_review_criteria">Review Criteria</a>
+</h1>
+<p id="rfc.section.7.4.2.p.1">A Designated Expert <strong>MUST</strong> take the following criteria into account when reviewing registration requests.</p>
+<p id="rfc.section.7.4.2.p.2">For <strong>Specification Required</strong> registries:</p>
+<p></p>
+
+<ul>
+<li>whether the proposed registration duplicates existing functionality;</li>
+<li>the clarity of the proposed registration description;</li>
+<li>whether the specification of the proposed registration item is publicly available;</li>
+<li>whether the proposed registration would affect the security of users of OpenPGP; and</li>
+<li>whether the proposed registration is likely to be of general applicability.</li>
+</ul>
+
+<p> </p>
+<h1 id="rfc.section.7.5">
+<a href="#rfc.section.7.5">7.5.</a> <a href="#_review_outcomes" id="_review_outcomes">Review Outcomes</a>
+</h1>
+<p id="rfc.section.7.5.p.1">Approvals <strong>MUST</strong> include an explanation.</p>
+<p id="rfc.section.7.5.p.2">Denials <strong>MUST</strong> include an explanation and, if applicable, constructive suggestions as to how to make the request successful.</p>
+<p id="rfc.section.7.5.p.3">A Designated Expert <strong>MAY</strong> elect to provide more in depth reviews than required.  Their review should not be taken as an endorsement of the feature or underlying primitives, such as cryptographic algorithms used by a registration.</p>
+<h1 id="rfc.section.7.6">
+<a href="#rfc.section.7.6">7.6.</a> <a href="#review-appeals" id="review-appeals">Review Appeals</a>
+</h1>
+<p id="rfc.section.7.6.p.1">The review appeals process is in accordance with <a href="#RFC8126" class="xref">10</a>, which specifies that the normal IETF appeals process as described in Section 6.5 of <a href="#RFC2026" class="xref">[RFC2026]</a> should be followed.</p>
+<p id="rfc.section.7.6.p.2">Review appeals <strong>SHOULD</strong> be directly brought to the IESG for resolution through the iesg@ietf.org mailing list.</p>
+<p id="rfc.section.7.6.p.3">The following issues are eligible for the appeals process:</p>
+<p></p>
+
+<ul>
+<li>Registration requests that have not received any Designated Expert reviews for a period longer than 21 days.</li>
+<li>A review was performed by an inappropriate Designated Expert, for example, who is strongly suspected of a conflict of interest or has demonstrated unprofessional behavior or impartiality.</li>
+</ul>
+
+<p> </p>
+<h1 id="rfc.section.8">
+<a href="#rfc.section.8">8.</a> <a href="#_security_considerations" id="_security_considerations">Security Considerations</a>
+</h1>
+<p id="rfc.section.8.p.1">The change to <strong>Specification Required</strong> from <strong>IETF Review</strong> lowers the barrier to add functionality and cryptographic algorithms for OpenPGP.</p>
+<p id="rfc.section.8.p.2">For registries that involve cryptographic algorithms, this change reflects the practical reality in that the "openpgp" mailing list is not responsible for cryptographic reviews, which is especially difficult for national cipher suites.</p>
+<p id="rfc.section.8.p.3">Security Recommended algorithms are regarded as secure for general use at the time of registration. However, since cryptographic algorithms and parameters will be broken or weakened over time, it <strong>MAY</strong> be possible that the recommended status in the registry lags behind the most recent advances in cryptanalysis.  Implementers and users <strong>SHOULD</strong> check that the cryptographic algorithms listed continue to provide the expected level of security desired.</p>
+<h1 id="rfc.section.9">
+<a href="#rfc.section.9">9.</a> <a href="#_iana_considerations" id="_iana_considerations">IANA Considerations</a>
+</h1>
+<p id="rfc.section.9.p.1">This document specifies a number of changes to the IANA OpenPGP registries.</p>
+<h1 id="rfc.section.10">
+<a href="#rfc.section.10">10.</a> <a href="#_acknowledgements" id="_acknowledgements">Acknowledgements</a>
+</h1>
+<p id="rfc.section.10.p.1">The authors would like to thank the following individuals for making this document possible:</p>
+<p></p>
+
+<ul>
+<li>Security Area Directors: Eric Rescola and Kathleen Moriarty;</li>
+<li>The inaugural SECDISPATCH chairs: Tim Polk, Nancy Cam-Winget and Russ Housley;</li>
+<li>Supporters of this revision scheme: Rich Salz, Sean Leonard, Richard Barnes, and Daniel Kahn Gillmor.</li>
+</ul>
+
+<p> </p>
+<h1 id="rfc.references">
+<a href="#rfc.references">11.</a> References</h1>
+<h1 id="rfc.references.1">
+<a href="#rfc.references.1">11.1.</a> Normative References</h1>
+<table><tbody>
+<tr>
+<td class="reference"><b id="RFC2119">[RFC2119]</b></td>
+<td class="top">
+<a>Bradner, S.</a>, "<a href="https://tools.ietf.org/html/rfc2119">Key words for use in RFCs to Indicate Requirement Levels</a>", BCP 14, RFC 2119, DOI 10.17487/RFC2119, March 1997.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC4880">[RFC4880]</b></td>
+<td class="top">
+<a>Callas, J.</a>, <a>Donnerhacke, L.</a>, <a>Finney, H.</a>, <a>Shaw, D.</a> and <a>R. Thayer</a>, "<a href="https://tools.ietf.org/html/rfc4880">OpenPGP Message Format</a>", RFC 4880, DOI 10.17487/RFC4880, November 2007.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC8126">[RFC8126]</b></td>
+<td class="top">
+<a>Cotton, M.</a>, <a>Leiba, B.</a> and <a>T. Narten</a>, "<a href="https://tools.ietf.org/html/rfc8126">Guidelines for Writing an IANA Considerations Section in RFCs</a>", BCP 26, RFC 8126, DOI 10.17487/RFC8126, June 2017.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC8174">[RFC8174]</b></td>
+<td class="top">
+<a>Leiba, B.</a>, "<a href="https://tools.ietf.org/html/rfc8174">Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words</a>", BCP 14, RFC 8174, DOI 10.17487/RFC8174, May 2017.</td>
+</tr>
+</tbody></table>
+<h1 id="rfc.references.2">
+<a href="#rfc.references.2">11.2.</a> Informative References</h1>
+<table><tbody>
+<tr>
+<td class="reference"><b id="RFC1991">[RFC1991]</b></td>
+<td class="top">
+<a>Atkins, D.</a>, <a>Stallings, W.</a> and <a>P. Zimmermann</a>, "<a href="https://tools.ietf.org/html/rfc1991">PGP Message Exchange Formats</a>", RFC 1991, DOI 10.17487/RFC1991, August 1996.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC2026">[RFC2026]</b></td>
+<td class="top">
+<a>Bradner, S.</a>, "<a href="https://tools.ietf.org/html/rfc2026">The Internet Standards Process -- Revision 3</a>", BCP 9, RFC 2026, DOI 10.17487/RFC2026, October 1996.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC2144">[RFC2144]</b></td>
+<td class="top">
+<a>Adams, C.</a>, "<a href="https://tools.ietf.org/html/rfc2144">The CAST-128 Encryption Algorithm</a>", RFC 2144, DOI 10.17487/RFC2144, May 1997.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC2434">[RFC2434]</b></td>
+<td class="top">
+<a>Narten, T.</a> and <a>H. Alvestrand</a>, "<a href="https://tools.ietf.org/html/rfc2434">Guidelines for Writing an IANA Considerations Section in RFCs</a>", RFC 2434, DOI 10.17487/RFC2434, October 1998.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC2440">[RFC2440]</b></td>
+<td class="top">
+<a>Callas, J.</a>, <a>Donnerhacke, L.</a>, <a>Finney, H.</a> and <a>R. Thayer</a>, "<a href="https://tools.ietf.org/html/rfc2440">OpenPGP Message Format</a>", RFC 2440, DOI 10.17487/RFC2440, November 1998.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC5581">[RFC5581]</b></td>
+<td class="top">
+<a>Shaw, D.</a>, "<a href="https://tools.ietf.org/html/rfc5581">The Camellia Cipher in OpenPGP</a>", RFC 5581, DOI 10.17487/RFC5581, June 2009.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC6194">[RFC6194]</b></td>
+<td class="top">
+<a>Polk, T.</a>, <a>Chen, L.</a>, <a>Turner, S.</a> and <a>P. Hoffman</a>, "<a href="https://tools.ietf.org/html/rfc6194">Security Considerations for the SHA-0 and SHA-1 Message-Digest Algorithms</a>", RFC 6194, DOI 10.17487/RFC6194, March 2011.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC6637">[RFC6637]</b></td>
+<td class="top">
+<a>Jivsov, A.</a>, "<a href="https://tools.ietf.org/html/rfc6637">Elliptic Curve Cryptography (ECC) in OpenPGP</a>", RFC 6637, DOI 10.17487/RFC6637, June 2012.</td>
+</tr>
+<tr>
+<td class="reference"><b id="RFC8447">[RFC8447]</b></td>
+<td class="top">
+<a>Salowey, J.</a> and <a>S. Turner</a>, "<a href="https://tools.ietf.org/html/rfc8447">IANA Registry Updates for TLS and DTLS</a>", RFC 8447, DOI 10.17487/RFC8447, August 2018.</td>
+</tr>
+</tbody></table>
+<h1 id="rfc.authors"><a href="#rfc.authors">Authors' Addresses</a></h1>
+<div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">Ronald Henry Tse</span> 
+	  <span class="n hidden">
+		<span class="family-name">Tse</span>
+	  </span>
+	</span>
+	<span class="org vcardline">Ribose</span>
+	<span class="adr">
+	  <span class="vcardline">Suite 1111, 1 Pedder Street</span>
+
+	  <span class="vcardline">
+		<span class="locality">Central</span>,  
+		<span class="region">Hong Kong</span> 
+		<span class="code"></span>
+	  </span>
+	  <span class="country-name vcardline">Hong Kong</span>
+	</span>
+	<span class="vcardline">EMail: <a href="mailto:ronald.tse@ribose.com">ronald.tse@ribose.com</a></span>
+
+<span class="vcardline">URI: <a href="https://gnupg.org/verein">https://gnupg.org/verein</a></span>
+
+  </address>
+</div><div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">Werner Koch</span> 
+	  <span class="n hidden">
+		<span class="family-name">Koch</span>
+	  </span>
+	</span>
+	<span class="org vcardline">GnuPG e.V.</span>
+	<span class="adr">
+	  <span class="vcardline">Rochusstr. 44</span>
+
+	  <span class="vcardline">
+		<span class="locality">Duesseldorf</span>,  
+		<span class="region"></span>
+		<span class="code">40479</span>
+	  </span>
+	  <span class="country-name vcardline">Germany</span>
+	</span>
+	<span class="vcardline">EMail: <a href="mailto:wk@gnupg.org">wk@gnupg.org</a></span>
+
+  </address>
+</div><div class="avoidbreak">
+  <address class="vcard">
+	<span class="vcardline">
+	  <span class="fn">Derek Atkins</span> 
+	  <span class="n hidden">
+		<span class="family-name">Atkins</span>
+	  </span>
+	</span>
+	<span class="org vcardline">IHTFP Consulting</span>
+	<span class="adr">
+	  <span class="vcardline">6 Farragut Ave</span>
+
+	  <span class="vcardline">
+		<span class="locality">Somerville</span>,  
+		<span class="region"></span>
+		<span class="code">02144</span>
+	  </span>
+	  <span class="country-name vcardline">USA</span>
+	</span>
+	<span class="vcardline">Phone: +1 617 623 3745</span>
+
+<span class="vcardline">EMail: <a href="mailto:derek@ihtfp.com">derek@ihtfp.com</a></span>
+
+  </address>
+</div>
+
+</body>
+</html>

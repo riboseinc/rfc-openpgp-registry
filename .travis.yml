@@ -1,0 +1,24 @@
+dist: trusty
+# sudo:false runs in container mode, but its setup is really slow and causes asciidoctor to crash
+sudo: true
+language: ruby
+env:
+  - IDNITS_URL=https://tools.ietf.org/tools/idnits/
+rvm:
+  - 2.4.1
+addons:
+  apt:
+    sources:
+      - deadsnakes # source required so it finds the package definition below
+    packages:
+      - python3.6
+before_install:
+  - gem install bundler
+install:
+  - export IDNITS_VER=$(curl -Ls $IDNITS_URL | grep -e 'tgz' | sed -e 's/.*\(idnits-.*\).tgz.*/\1/') ; echo ${IDNITS_VER}
+  - curl -SL ${IDNITS_URL}${IDNITS_VER} | tar xzv
+  - export PATH=$(pwd)/${IDNITS_VER}:${PATH}
+  - pip install --user -r requirements.txt
+  - bundle install --path vendor/bundle
+script:
+  - make clean all publish deploy

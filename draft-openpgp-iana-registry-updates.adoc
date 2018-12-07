@@ -1,0 +1,62 @@
+= IANA Registry Updates for OpenPGP
+:doctype: internet-draft
+:name: draft-openpgp-iana-registry-updates-02
+:abbrev: OpenPGP IANA Registry Updates
+:updates: 4880
+:status: info
+:ipr: trust200902
+:submission-type: IETF
+:area: sec
+:intended-series: full-standard
+:workgroup: Security Area Advisory Group
+:revdate: 2018-12-07T00:00:00Z
+:rfc2629xslt: true
+:fullname: Ronald Henry Tse
+:lastname: Tse
+:forename_initials: R. H.
+:organization: Ribose
+:street: Suite 1111, 1 Pedder Street
+:city: Central
+:region: Hong Kong
+:country: Hong Kong
+:uri: https://www.ribose.com
+:email: ronald.tse@ribose.com
+:fullname_2: Werner Koch
+:lastname_2: Koch
+:forename_initials_2: W.
+:email_2: wk@gnupg.org
+:organization_2: GnuPG e.V.
+:street_2: Rochusstr. 44
+:code_2: 40479
+:city_2: Duesseldorf
+:country_2: Germany
+:email_2: wk@gnupg.org
+:uri: https://gnupg.org/verein
+:fullname_3: Derek Atkins
+:lastname_3: Atkins
+:forename_initials_3: D.
+:email_3: derek@ihtfp.com
+:organization_3: IHTFP Consulting
+:street_3: 6 Farragut Ave
+:city_3: Somerville
+:state_3: MA
+:code_3: 02144
+:country_3: USA
+:phone_3: +1 617 623 3745
+
+include::sections/00-abstract.adoc[leveloffset=+1]
+
+include::sections/01-intro.adoc[leveloffset=+1]
+include::sections/02-conventions.adoc[leveloffset=+1]
+include::sections/03-alignment.adoc[leveloffset=+1]
+include::sections/04-recommended.adoc[leveloffset=+1]
+include::sections/05-registries.adoc[leveloffset=+1]
+include::sections/93-specrev-registry.adoc[leveloffset=+1]
+include::sections/94-expert-pool.adoc[leveloffset=+1]
+include::sections/95-security.adoc[leveloffset=+1]
+include::sections/96-iana.adoc[leveloffset=+1]
+
+// must give references before appendix!
+
+include::sections/99-acknowledgements.adoc[leveloffset=+1]
+include::sections/98-references.adoc[leveloffset=+1]
