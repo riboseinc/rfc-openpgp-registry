@@ -1,6 +1,6 @@
 = Internet-Draft: SECDISPATCH OpenPGP Registry Update
 
-image:https://travis-ci.com/riboseinc/rfc-openpgp-registry.svg?branch=master["Build Status", link="https://travis-ci.com/riboseinc/rfc-openpgp-registry"]
+image:https://travis-ci.org/riboseinc/rfc-openpgp-registry.svg?branch=master["Build Status", link="https://travis-ci.org/riboseinc/rfc-openpgp-registry"]
 
 This document is available in its rendered forms here:
 
