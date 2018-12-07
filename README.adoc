@@ -3,8 +3,8 @@
 image:https://img.shields.io/travis/riboseinc/rfc-openpgp-registry/master.svg[
 	Build Status, link="https://travis-ci.org/riboseinc/rfc-openpgp-registry"]
 
-This Internet-Draft is written in pure AsciiRFC using the excellent
-https://github.com/riboseinc/asciidoctor-rfc[`asciidoctor-rfc` gem].
+This Internet-Draft is authored in https://github.com/riboseinc/metanorma-ietf[Metanorma]
+using AsciiRFC syntax.
 
 == Fetching the document
 
@@ -15,7 +15,9 @@ git clone https://github.com/riboseinc/rfc-openpgp-registry
 
 == Installing Build Tools
 
-You will need Ruby, `xml2rfc` and `idnits` (for submission preflight).
+You will need to install Metanorma, `xml2rfc` and `idnits` (for submission preflight).
+
+Please see https://www.metanorma.com for installation instructions.
 
 === On macOS
 
