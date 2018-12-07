@@ -9,7 +9,7 @@ Moreover, the fast-moving nature of cryptography directly impacts the
 security of OpenPGP implementations, and an algorithm once considered
 secure may be subject to cryptanalytic results that advise otherwise.
 For example, this has been demonstrated by the widespread obsolescence
-of SHA-1 <<SHA1-Coll>> <<RFC6194>>.
+of SHA-1 <<RFC6194>>.
 
 It is therefore beneficial for all OpenPGP interested parties that
 implementers can follow a stable reference on what is considered best
@@ -46,7 +46,7 @@ Expert Review described in <<expert-review>>.
 
 Cryptographic algorithms and parameters will be broken or weakened
 over time. Blindly implementing cipher suites listed in the registries
-is not advised. 
+is not advised.
 
 Implementers and users *SHOULD* check that the cryptographic
 algorithms listed continue to provide the expected level of security.

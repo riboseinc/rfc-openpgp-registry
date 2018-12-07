@@ -5,7 +5,7 @@ This document instructs IANA to make changes to a number of
 OpenPGP-related IANA registries <<RFC4880>>. These changes were
 motivated by recently proposed extensions to OpenPGP.
 
-Modelled after <<I-D.ietf-tls-iana-registry-updates>>, the document
+Modelled after <<RFC8447>>, the document
 performs a similar function in modifying existing IANA registry
 policies for OpenPGP <<RFC4880>>.
 
