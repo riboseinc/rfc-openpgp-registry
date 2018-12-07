@@ -1,7 +1,14 @@
 = Internet-Draft: SECDISPATCH OpenPGP Registry Update
 
-image:https://img.shields.io/travis/riboseinc/rfc-openpgp-registry/master.svg[
-	Build Status, link="https://travis-ci.org/riboseinc/rfc-openpgp-registry"]
+image:https://travis-ci.com/riboseinc/rfc-openpgp-registry.svg?branch=master["Build Status", link="https://travis-ci.com/riboseinc/rfc-openpgp-registry"]
+
+This document is available in its rendered forms here:
+
+* https://riboseinc.github.io/rfc-openpgp-registry/[IANA Registry Updates for OpenPGP (HTML)]
+* https://riboseinc.github.io/rfc-openpgp-registry/draft-openpgp-iana-registry-updates.txt[TXT]
+* https://riboseinc.github.io/rfc-openpgp-registry/draft-openpgp-iana-registry-updates.nits[NITS]
+* https://riboseinc.github.io/rfc-openpgp-registry/draft-openpgp-iana-registry-updates.xml[RFC XML v2]
+//* https://riboseinc.github.io/rfc-openpgp-registry/draft-openpgp-iana-registry-updates.rxl[Relaton XML (Bibliographic item)]
 
 This Internet-Draft is authored in https://github.com/riboseinc/metanorma-ietf[Metanorma]
 using AsciiRFC syntax.
