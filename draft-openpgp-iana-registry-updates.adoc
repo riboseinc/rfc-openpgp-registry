@@ -37,12 +37,23 @@
 :forename_initials_3: D.
 :email_3: derek@ihtfp.com
 :organization_3: IHTFP Consulting
-:street_3: 6 Farragut Ave
-:city_3: Somerville
-:state_3: MA
-:code_3: 02144
-:country_3: USA
+:street_3: 5525 W Idlewood Ln
+:city_3: Sandy Springs
+:state_3: GA
+:code_3: 30327
+:country_3: United States of America
 :phone_3: +1 617 623 3745
+// :fullname_4: brian m. carlson
+// :lastname_4: carlson
+// :forename_initials_4: b.
+// :email_4: sandals@crustytoothpaste.net
+// :organization_4:
+// :street_4:
+// :city_4:
+// :state_4:
+// :code_4:
+// :country_4: United States of America
+// :phone_4:
 
 include::sections/00-abstract.adoc[leveloffset=+1]
 
